@@ -1,0 +1,13 @@
+CRITICAL - 2022-04-26 14:34:13 --> array_merge(): Expected parameter 1 to be an array, string given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_merge(): ...', 'C:\\Dropbox\\Proj...', 1310, Array)
+#1 C:\Dropbox\Projetos\www\glometal\system\Database\BaseBuilder.php(1310): array_merge('\nORDER BY `id_e...', Array)
+#2 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(138): CodeIgniter\Database\BaseBuilder->orderBy('id_entrada', ' ASC')
+#3 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(202): Hermawan\DataTables\DataTableQuery->queryOrder(Object(CodeIgniter\Database\MySQLi\Builder))
+#4 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(70): Hermawan\DataTables\DataTableQuery->queryResult()
+#5 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->getDataResult()
+#6 C:\Dropbox\Projetos\www\glometal\app\Controllers\Entradas.php(42): Hermawan\DataTables\DataTable->toJson()
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Entradas->listar()
+#8 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entradas))
+#9 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}

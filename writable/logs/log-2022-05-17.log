@@ -1,0 +1,38 @@
+CRITICAL - 2022-05-17 08:38:57 --> Call to undefined function App\Controllers\calcular_peso_processado()
+#0 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Processos->salvar_item()
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Processos))
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2022-05-17 08:56:37 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 22
+ERROR - 2022-05-17 10:13:09 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM `processos`
+JOIN `fornos` ON `fornos`.`id_forno` = `processos`.`id_forno`
+O' at line 2
+CRITICAL - 2022-05-17 10:13:09 --> Call to a member function getResult() on bool
+#0 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(70): Hermawan\DataTables\DataTableQuery->queryResult()
+#1 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->getDataResult()
+#2 C:\Dropbox\Projetos\www\glometal\app\Controllers\Processos.php(45): Hermawan\DataTables\DataTable->toJson()
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Processos->listar()
+#4 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Processos))
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2022-05-17 11:32:21 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 4
+ERROR - 2022-05-17 11:32:21 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 22
+ERROR - 2022-05-17 11:32:24 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 4
+ERROR - 2022-05-17 11:32:24 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 22
+ERROR - 2022-05-17 11:33:35 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 4
+ERROR - 2022-05-17 11:33:35 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 22
+CRITICAL - 2022-05-17 12:07:57 --> array_merge(): Expected parameter 1 to be an array, string given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_merge(): ...', 'C:\\Dropbox\\Proj...', 1310, Array)
+#1 C:\Dropbox\Projetos\www\glometal\system\Database\BaseBuilder.php(1310): array_merge('\nORDER BY `id_e...', Array)
+#2 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(138): CodeIgniter\Database\BaseBuilder->orderBy('nome', ' ASC')
+#3 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(202): Hermawan\DataTables\DataTableQuery->queryOrder(Object(CodeIgniter\Database\MySQLi\Builder))
+#4 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(70): Hermawan\DataTables\DataTableQuery->queryResult()
+#5 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->getDataResult()
+#6 C:\Dropbox\Projetos\www\glometal\app\Controllers\Entradas.php(54): Hermawan\DataTables\DataTable->toJson()
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Entradas->listar()
+#8 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entradas))
+#9 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}

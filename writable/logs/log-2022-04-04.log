@@ -1,0 +1,61 @@
+CRITICAL - 2022-04-04 15:26:12 --> Undefined variable: titulo_pagina
+#0 C:\Dropbox\Projetos\www\glometal\app\Views\base\header.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Dropbox\\Proj...', 7, Array)
+#1 C:\Dropbox\Projetos\www\glometal\system\View\View.php(214): include('C:\\Dropbox\\Proj...')
+#2 C:\Dropbox\Projetos\www\glometal\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Dropbox\Projetos\www\glometal\system\Common.php(1097): CodeIgniter\View\View->render('base/header.php', Array, true)
+#4 C:\Dropbox\Projetos\www\glometal\app\Controllers\Home.php(9): view('base/header.php')
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Home->index()
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-04 16:42:42 --> Undefined variable: titulo_pagina
+#0 C:\Dropbox\Projetos\www\glometal\app\Views\base\header.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Dropbox\\Proj...', 7, Array)
+#1 C:\Dropbox\Projetos\www\glometal\system\View\View.php(214): include('C:\\Dropbox\\Proj...')
+#2 C:\Dropbox\Projetos\www\glometal\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Dropbox\Projetos\www\glometal\system\Common.php(1097): CodeIgniter\View\View->render('base/header.php', Array, true)
+#4 C:\Dropbox\Projetos\www\glometal\app\Controllers\Home.php(9): view('base/header.php')
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Home->index()
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-04 21:59:28 --> Undefined variable: titulo_pagina
+#0 C:\Dropbox\Projetos\www\glometal\app\Views\base\header.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Dropbox\\Proj...', 7, Array)
+#1 C:\Dropbox\Projetos\www\glometal\system\View\View.php(214): include('C:\\Dropbox\\Proj...')
+#2 C:\Dropbox\Projetos\www\glometal\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Dropbox\Projetos\www\glometal\system\Common.php(1097): CodeIgniter\View\View->render('base/header.php', Array, true)
+#4 C:\Dropbox\Projetos\www\glometal\app\Controllers\Home.php(9): view('base/header.php')
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Home->index()
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-04-04 22:00:04 --> Unknown column 'id_liente' in 'where clause'
+CRITICAL - 2022-04-04 22:00:04 --> Unknown column 'id_liente' in 'where clause'
+#0 C:\Dropbox\Projetos\www\glometal\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `cl...', 0)
+#1 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `cl...')
+#2 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `cl...')
+#3 C:\Dropbox\Projetos\www\glometal\system\Database\BaseBuilder.php(2213): CodeIgniter\Database\BaseConnection->query('DELETE FROM `cl...', Array, false)
+#4 C:\Dropbox\Projetos\www\glometal\system\Model.php(359): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\Dropbox\Projetos\www\glometal\system\BaseModel.php(963): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\Dropbox\Projetos\www\glometal\app\Controllers\Clientes.php(29): CodeIgniter\BaseModel->delete(Array)
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Clientes->remover('1')
+#8 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+#9 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-04-04 22:00:09 --> Unknown column 'id_liente' in 'where clause'
+CRITICAL - 2022-04-04 22:00:09 --> Unknown column 'id_liente' in 'where clause'
+#0 C:\Dropbox\Projetos\www\glometal\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `cl...', 0)
+#1 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `cl...')
+#2 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `cl...')
+#3 C:\Dropbox\Projetos\www\glometal\system\Database\BaseBuilder.php(2213): CodeIgniter\Database\BaseConnection->query('DELETE FROM `cl...', Array, false)
+#4 C:\Dropbox\Projetos\www\glometal\system\Model.php(359): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\Dropbox\Projetos\www\glometal\system\BaseModel.php(963): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\Dropbox\Projetos\www\glometal\app\Controllers\Clientes.php(29): CodeIgniter\BaseModel->delete(Array)
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Clientes->remover('1')
+#8 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+#9 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}

@@ -1,0 +1,26 @@
+CRITICAL - 2022-05-22 19:22:04 --> array_merge(): Expected parameter 1 to be an array, string given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_merge(): ...', 'C:\\Dropbox\\Proj...', 1310, Array)
+#1 C:\Dropbox\Projetos\www\glometal\system\Database\BaseBuilder.php(1310): array_merge('\nORDER BY `entr...', Array)
+#2 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(138): CodeIgniter\Database\BaseBuilder->orderBy('id_entrada', ' ASC')
+#3 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(202): Hermawan\DataTables\DataTableQuery->queryOrder(Object(CodeIgniter\Database\MySQLi\Builder))
+#4 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(70): Hermawan\DataTables\DataTableQuery->queryResult()
+#5 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->getDataResult()
+#6 C:\Dropbox\Projetos\www\glometal\app\Controllers\Processos.php(173): Hermawan\DataTables\DataTable->toJson()
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Processos->listar_itens('10')
+#8 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Processos))
+#9 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-05-22 19:26:24 --> array_merge(): Expected parameter 1 to be an array, string given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_merge(): ...', 'C:\\Dropbox\\Proj...', 1310, Array)
+#1 C:\Dropbox\Projetos\www\glometal\system\Database\BaseBuilder.php(1310): array_merge('\nORDER BY `id_e...', Array)
+#2 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(138): CodeIgniter\Database\BaseBuilder->orderBy('peso_disponivel', ' ASC')
+#3 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(202): Hermawan\DataTables\DataTableQuery->queryOrder(Object(CodeIgniter\Database\MySQLi\Builder))
+#4 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(70): Hermawan\DataTables\DataTableQuery->queryResult()
+#5 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->getDataResult()
+#6 C:\Dropbox\Projetos\www\glometal\app\Controllers\Processos.php(227): Hermawan\DataTables\DataTable->toJson()
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Processos->listar_entradas_disponiveis()
+#8 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Processos))
+#9 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}

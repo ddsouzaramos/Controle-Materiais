@@ -1,0 +1,1 @@
+alter table entradas add sequencia smallint comment "Sequencia da Entrada de Origem";

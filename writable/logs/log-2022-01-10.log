@@ -1,0 +1,825 @@
+CRITICAL - 2022-01-10 08:17:37 --> Undefined variable: titulo_pagina
+#0 C:\Dropbox\Projetos\www\glometal\app\Views\base\header.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Dropbox\\Proj...', 7, Array)
+#1 C:\Dropbox\Projetos\www\glometal\system\View\View.php(214): include('C:\\Dropbox\\Proj...')
+#2 C:\Dropbox\Projetos\www\glometal\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Dropbox\Projetos\www\glometal\system\Common.php(1097): CodeIgniter\View\View->render('base/header.php', Array, true)
+#4 C:\Dropbox\Projetos\www\glometal\app\Controllers\Home.php(9): view('base/header.php')
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Home->index()
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-10 08:34:42 --> Cannot add or update a child row: a foreign key constraint fails (`infinity_glometal`.`entradas`, CONSTRAINT `entradas_ibfk_1` FOREIGN KEY (`id_fornecedor`) REFERENCES `fornecedores` (`id_fornecedor`))
+CRITICAL - 2022-01-10 08:34:42 --> Cannot add or update a child row: a foreign key constraint fails (`infinity_glometal`.`entradas`, CONSTRAINT `entradas_ibfk_1` FOREIGN KEY (`id_fornecedor`) REFERENCES `fornecedores` (`id_fornecedor`))
+#0 C:\Dropbox\Projetos\www\glometal\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `en...', 0)
+#1 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `en...')
+#2 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `en...')
+#3 C:\Dropbox\Projetos\www\glometal\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO `en...', Array, false)
+#4 C:\Dropbox\Projetos\www\glometal\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Dropbox\Projetos\www\glometal\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\Dropbox\Projetos\www\glometal\system\Model.php(620): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Dropbox\Projetos\www\glometal\app\Controllers\Entradas.php(97): CodeIgniter\Model->insert(Array)
+#8 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Entradas->salvar()
+#9 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entradas))
+#10 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-01-10 08:35:51 --> ERROR é um level de log inválido.
+#0 C:\Dropbox\Projetos\www\glometal\system\Log\Logger.php(257): CodeIgniter\Log\Exceptions\LogException::forInvalidLogLevel('ERROR')
+#1 C:\Dropbox\Projetos\www\glometal\system\Common.php(765): CodeIgniter\Log\Logger->log('ERROR', 'id_fornecedor7', Array)
+#2 C:\Dropbox\Projetos\www\glometal\app\Controllers\Entradas.php(47): log_message('ERROR', 'id_fornecedor7')
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Entradas->salvar()
+#4 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entradas))
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-01-10 08:36:34 --> DEBUG é um level de log inválido.
+#0 C:\Dropbox\Projetos\www\glometal\system\Log\Logger.php(257): CodeIgniter\Log\Exceptions\LogException::forInvalidLogLevel('DEBUG')
+#1 C:\Dropbox\Projetos\www\glometal\system\Common.php(765): CodeIgniter\Log\Logger->log('DEBUG', 'id_fornecedor7', Array)
+#2 C:\Dropbox\Projetos\www\glometal\app\Controllers\Entradas.php(47): log_message('DEBUG', 'id_fornecedor7')
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Entradas->salvar()
+#4 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entradas))
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2022-01-10 08:37:40 --> id_fornecedor 7
+ERROR - 2022-01-10 08:37:41 --> Cannot add or update a child row: a foreign key constraint fails (`infinity_glometal`.`entradas`, CONSTRAINT `entradas_ibfk_1` FOREIGN KEY (`id_fornecedor`) REFERENCES `fornecedores` (`id_fornecedor`))
+CRITICAL - 2022-01-10 08:37:41 --> Cannot add or update a child row: a foreign key constraint fails (`infinity_glometal`.`entradas`, CONSTRAINT `entradas_ibfk_1` FOREIGN KEY (`id_fornecedor`) REFERENCES `fornecedores` (`id_fornecedor`))
+#0 C:\Dropbox\Projetos\www\glometal\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `en...', 0)
+#1 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `en...')
+#2 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `en...')
+#3 C:\Dropbox\Projetos\www\glometal\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO `en...', Array, false)
+#4 C:\Dropbox\Projetos\www\glometal\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Dropbox\Projetos\www\glometal\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\Dropbox\Projetos\www\glometal\system\Model.php(620): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Dropbox\Projetos\www\glometal\app\Controllers\Entradas.php(99): CodeIgniter\Model->insert(Array)
+#8 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Entradas->salvar()
+#9 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entradas))
+#10 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-01-10 08:39:57 --> id_fornecedor 5
+ERROR - 2022-01-10 08:39:57 --> 1
+ERROR - 2022-01-10 08:39:57 --> Cannot add or update a child row: a foreign key constraint fails (`infinity_glometal`.`entradas`, CONSTRAINT `entradas_ibfk_1` FOREIGN KEY (`id_fornecedor`) REFERENCES `fornecedores` (`id_fornecedor`))
+CRITICAL - 2022-01-10 08:39:57 --> Cannot add or update a child row: a foreign key constraint fails (`infinity_glometal`.`entradas`, CONSTRAINT `entradas_ibfk_1` FOREIGN KEY (`id_fornecedor`) REFERENCES `fornecedores` (`id_fornecedor`))
+#0 C:\Dropbox\Projetos\www\glometal\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `en...', 0)
+#1 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `en...')
+#2 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `en...')
+#3 C:\Dropbox\Projetos\www\glometal\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO `en...', Array, false)
+#4 C:\Dropbox\Projetos\www\glometal\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Dropbox\Projetos\www\glometal\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\Dropbox\Projetos\www\glometal\system\Model.php(620): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Dropbox\Projetos\www\glometal\app\Controllers\Entradas.php(101): CodeIgniter\Model->insert(Array)
+#8 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Entradas->salvar()
+#9 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entradas))
+#10 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-01-10 08:40:59 --> id_fornecedor 5
+ERROR - 2022-01-10 08:40:59 --> aqui
+ERROR - 2022-01-10 08:40:59 --> 1
+ERROR - 2022-01-10 08:41:00 --> Cannot add or update a child row: a foreign key constraint fails (`infinity_glometal`.`entradas`, CONSTRAINT `entradas_ibfk_1` FOREIGN KEY (`id_fornecedor`) REFERENCES `fornecedores` (`id_fornecedor`))
+CRITICAL - 2022-01-10 08:41:00 --> Cannot add or update a child row: a foreign key constraint fails (`infinity_glometal`.`entradas`, CONSTRAINT `entradas_ibfk_1` FOREIGN KEY (`id_fornecedor`) REFERENCES `fornecedores` (`id_fornecedor`))
+#0 C:\Dropbox\Projetos\www\glometal\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `en...', 0)
+#1 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `en...')
+#2 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `en...')
+#3 C:\Dropbox\Projetos\www\glometal\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO `en...', Array, false)
+#4 C:\Dropbox\Projetos\www\glometal\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Dropbox\Projetos\www\glometal\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\Dropbox\Projetos\www\glometal\system\Model.php(620): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Dropbox\Projetos\www\glometal\app\Controllers\Entradas.php(102): CodeIgniter\Model->insert(Array)
+#8 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Entradas->salvar()
+#9 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entradas))
+#10 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-01-10 08:41:33 --> id_fornecedor 5
+ERROR - 2022-01-10 08:41:33 --> aqui
+ERROR - 2022-01-10 08:41:33 --> sss1
+ERROR - 2022-01-10 08:41:33 --> Cannot add or update a child row: a foreign key constraint fails (`infinity_glometal`.`entradas`, CONSTRAINT `entradas_ibfk_1` FOREIGN KEY (`id_fornecedor`) REFERENCES `fornecedores` (`id_fornecedor`))
+CRITICAL - 2022-01-10 08:41:33 --> Cannot add or update a child row: a foreign key constraint fails (`infinity_glometal`.`entradas`, CONSTRAINT `entradas_ibfk_1` FOREIGN KEY (`id_fornecedor`) REFERENCES `fornecedores` (`id_fornecedor`))
+#0 C:\Dropbox\Projetos\www\glometal\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `en...', 0)
+#1 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `en...')
+#2 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `en...')
+#3 C:\Dropbox\Projetos\www\glometal\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO `en...', Array, false)
+#4 C:\Dropbox\Projetos\www\glometal\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Dropbox\Projetos\www\glometal\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\Dropbox\Projetos\www\glometal\system\Model.php(620): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Dropbox\Projetos\www\glometal\app\Controllers\Entradas.php(102): CodeIgniter\Model->insert(Array)
+#8 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Entradas->salvar()
+#9 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entradas))
+#10 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-01-10 08:45:13 --> id_fornecedor 5
+ERROR - 2022-01-10 08:45:13 --> sss1
+ERROR - 2022-01-10 08:45:46 --> id_fornecedor 5
+ERROR - 2022-01-10 08:45:46 --> sss1
+ERROR - 2022-01-10 08:51:56 --> Unknown column 'entradas.peso_total' in 'field list'
+CRITICAL - 2022-01-10 08:51:56 --> Unknown column 'entradas.peso_total' in 'field list'
+#0 C:\Dropbox\Projetos\www\glometal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `entrada...', 0)
+#1 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `entrada...')
+#2 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `entrada...')
+#3 C:\Dropbox\Projetos\www\glometal\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT `entrada...', Array, false)
+#4 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(215): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(70): Hermawan\DataTables\DataTableQuery->queryResult()
+#6 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->getDataResult()
+#7 C:\Dropbox\Projetos\www\glometal\app\Controllers\Entradas.php(26): Hermawan\DataTables\DataTable->toJson()
+#8 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Entradas->listar()
+#9 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entradas))
+#10 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-01-10 08:52:11 --> Unknown column 'entradas.peso_total' in 'field list'
+CRITICAL - 2022-01-10 08:52:11 --> Unknown column 'entradas.peso_total' in 'field list'
+#0 C:\Dropbox\Projetos\www\glometal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `entrada...', 0)
+#1 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `entrada...')
+#2 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `entrada...')
+#3 C:\Dropbox\Projetos\www\glometal\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT `entrada...', Array, false)
+#4 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(215): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(70): Hermawan\DataTables\DataTableQuery->queryResult()
+#6 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->getDataResult()
+#7 C:\Dropbox\Projetos\www\glometal\app\Controllers\Entradas.php(26): Hermawan\DataTables\DataTable->toJson()
+#8 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Entradas->listar()
+#9 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entradas))
+#10 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-01-10 09:11:52 --> Error connecting to the database: MySQL server has gone away
+CRITICAL - 2022-01-10 09:11:52 --> Unable to connect to the database.
+Main connection [MySQLi]: MySQL server has gone away
+#0 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Dropbox\Projetos\www\glometal\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT `id_tipo...', Array, false)
+#2 C:\Dropbox\Projetos\www\glometal\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\Dropbox\Projetos\www\glometal\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\Dropbox\Projetos\www\glometal\app\Controllers\Tipos_materiais.php(103): CodeIgniter\BaseModel->findAll()
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Tipos_materiais->listar_select()
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tipos_materiais))
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-10 09:12:02 --> Error connecting to the database: Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu.
+
+CRITICAL - 2022-01-10 09:12:02 --> Unable to connect to the database.
+Main connection [MySQLi]: Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu.
+
+#0 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Dropbox\Projetos\www\glometal\system\Database\BaseBuilder.php(1527): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#2 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(53): CodeIgniter\Database\BaseBuilder->countAllResults()
+#3 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTable.php(173): Hermawan\DataTables\DataTableQuery->countAll()
+#4 C:\Dropbox\Projetos\www\glometal\app\Controllers\Entradas.php(27): Hermawan\DataTables\DataTable->toJson()
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Entradas->listar()
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entradas))
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-10 09:12:50 --> Error connecting to the database: Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu.
+
+CRITICAL - 2022-01-10 09:12:50 --> Unable to connect to the database.
+Main connection [MySQLi]: Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu.
+
+#0 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Dropbox\Projetos\www\glometal\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT `id_forn...', Array, false)
+#2 C:\Dropbox\Projetos\www\glometal\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\Dropbox\Projetos\www\glometal\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\Dropbox\Projetos\www\glometal\app\Controllers\Fornecedores.php(103): CodeIgniter\BaseModel->findAll()
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Fornecedores->listar_select()
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fornecedores))
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-10 09:13:00 --> Error connecting to the database: Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu.
+
+CRITICAL - 2022-01-10 09:13:00 --> Unable to connect to the database.
+Main connection [MySQLi]: Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu.
+
+#0 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Dropbox\Projetos\www\glometal\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT `id_tipo...', Array, false)
+#2 C:\Dropbox\Projetos\www\glometal\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\Dropbox\Projetos\www\glometal\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\Dropbox\Projetos\www\glometal\app\Controllers\Tipos_materiais.php(103): CodeIgniter\BaseModel->findAll()
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Tipos_materiais->listar_select()
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tipos_materiais))
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-10 09:13:10 --> Error connecting to the database: Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu.
+
+CRITICAL - 2022-01-10 09:13:10 --> Unable to connect to the database.
+Main connection [MySQLi]: Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu.
+
+#0 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Dropbox\Projetos\www\glometal\system\Database\BaseBuilder.php(1527): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#2 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(53): CodeIgniter\Database\BaseBuilder->countAllResults()
+#3 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTable.php(173): Hermawan\DataTables\DataTableQuery->countAll()
+#4 C:\Dropbox\Projetos\www\glometal\app\Controllers\Entradas.php(27): Hermawan\DataTables\DataTable->toJson()
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Entradas->listar()
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entradas))
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-01-10 11:22:36 --> syntax error, unexpected '''' (T_CONSTANT_ENCAPSED_STRING), expecting identifier (T_STRING)
+#0 C:\Dropbox\Projetos\www\glometal\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('/entradas')
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('/entradas')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-10 11:25:20 --> Undefined variable: id
+#0 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Dropbox\\Proj...', 11, Array)
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->pesagem('12')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-10 11:25:39 --> Undefined variable: id
+#0 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Dropbox\\Proj...', 11, Array)
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->pesar('12')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-10 11:25:57 --> Argument 2 passed to view() must be of the type array, null given, called in C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php on line 12
+#0 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(12): view('entradas_view.p...', NULL)
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->pesar('<')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-10 11:29:25 --> Argument 2 passed to view() must be of the type array, null given, called in C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php on line 12
+#0 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(12): view('entradas_view.p...', NULL)
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->pesar('<')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-10 11:29:45 --> Argument 2 passed to view() must be of the type array, null given, called in C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php on line 12
+#0 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(12): view('entradas_view.p...', NULL)
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->pesar('<')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-10 11:30:02 --> Argument 2 passed to view() must be of the type array, null given, called in C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php on line 12
+#0 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(12): view('entradas_view.p...', NULL)
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->pesar('<')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-10 11:30:04 --> Argument 2 passed to view() must be of the type array, null given, called in C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php on line 12
+#0 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(12): view('entradas_view.p...', NULL)
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->pesar('<')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-10 11:30:10 --> Argument 2 passed to view() must be of the type array, null given, called in C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php on line 12
+#0 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(12): view('entradas_view.p...', NULL)
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->pesar('<')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-10 11:31:38 --> Argument 2 passed to view() must be of the type array, null given, called in C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php on line 12
+#0 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(12): view('entradas_view.p...', NULL)
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->pesar('<')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-10 11:31:41 --> Argument 2 passed to view() must be of the type array, null given, called in C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php on line 12
+#0 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(12): view('entradas_view.p...', NULL)
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->pesar('<')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-10 11:31:54 --> Argument 2 passed to view() must be of the type array, null given, called in C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php on line 12
+#0 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(12): view('pesagens_view.p...', NULL)
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->pesar('<')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-10 11:36:18 --> Argument 2 passed to view() must be of the type array, null given, called in C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php on line 12
+#0 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(12): view('pesagens_view.p...', NULL)
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->pesar('<')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-10 11:37:43 --> Argument 2 passed to view() must be of the type array, null given, called in C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php on line 12
+#0 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(12): view('pesagens_view.p...', NULL)
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->pesar('<')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-10 11:38:27 --> Argument 2 passed to view() must be of the type array, null given, called in C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php on line 12
+#0 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(12): view('pesagens_view.p...', NULL)
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->pesar('<')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-10 11:38:56 --> Argument 2 passed to view() must be of the type array, null given, called in C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php on line 12
+#0 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(12): view('pesagens_view.p...', NULL)
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->pesar('<')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-10 11:39:23 --> Argument 2 passed to view() must be of the type array, null given, called in C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php on line 12
+#0 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(12): view('pesagens_view.p...', NULL)
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->pesar('<')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-10 11:53:13 --> Argument 2 passed to view() must be of the type array, null given, called in C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php on line 12
+#0 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(12): view('pesagens_view.p...', NULL)
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->pesar('<')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-10 11:56:07 --> Argument 2 passed to view() must be of the type array, null given, called in C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php on line 12
+#0 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(12): view('pesagens_view.p...', NULL)
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->pesar('<')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-10 11:57:14 --> Argument 2 passed to view() must be of the type array, null given, called in C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php on line 12
+#0 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(12): view('pesagens_view.p...', NULL)
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->pesar('<')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-10 11:57:54 --> Undefined variable: descricao
+#0 C:\Dropbox\Projetos\www\glometal\app\Views\pesagens_view.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Dropbox\\Proj...', 20, Array)
+#1 C:\Dropbox\Projetos\www\glometal\system\View\View.php(214): include('C:\\Dropbox\\Proj...')
+#2 C:\Dropbox\Projetos\www\glometal\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Dropbox\Projetos\www\glometal\system\Common.php(1097): CodeIgniter\View\View->render('pesagens_view.p...', Array, true)
+#4 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(12): view('pesagens_view.p...', Array)
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->pesar('12')
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-10 12:00:33 --> Column 'id_fornecedor' in field list is ambiguous
+CRITICAL - 2022-01-10 12:00:33 --> Column 'id_fornecedor' in field list is ambiguous
+#0 C:\Dropbox\Projetos\www\glometal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `id_entr...', 0)
+#1 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id_entr...')
+#2 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id_entr...')
+#3 C:\Dropbox\Projetos\www\glometal\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT `id_entr...', Array, false)
+#4 C:\Dropbox\Projetos\www\glometal\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Dropbox\Projetos\www\glometal\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(14): CodeIgniter\BaseModel->first()
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->pesar('12')
+#8 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#9 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-01-10 12:01:59 --> Column 'id_fornecedor' in field list is ambiguous
+CRITICAL - 2022-01-10 12:01:59 --> Column 'id_fornecedor' in field list is ambiguous
+#0 C:\Dropbox\Projetos\www\glometal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `id_entr...', 0)
+#1 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id_entr...')
+#2 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id_entr...')
+#3 C:\Dropbox\Projetos\www\glometal\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT `id_entr...', Array, false)
+#4 C:\Dropbox\Projetos\www\glometal\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Dropbox\Projetos\www\glometal\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(14): CodeIgniter\BaseModel->first()
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->pesar('12')
+#8 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#9 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-01-10 12:02:03 --> Column 'id_fornecedor' in field list is ambiguous
+CRITICAL - 2022-01-10 12:02:03 --> Column 'id_fornecedor' in field list is ambiguous
+#0 C:\Dropbox\Projetos\www\glometal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `id_entr...', 0)
+#1 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id_entr...')
+#2 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id_entr...')
+#3 C:\Dropbox\Projetos\www\glometal\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT `id_entr...', Array, false)
+#4 C:\Dropbox\Projetos\www\glometal\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Dropbox\Projetos\www\glometal\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(14): CodeIgniter\BaseModel->first()
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->pesar('12')
+#8 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#9 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-01-10 12:02:17 --> Argument 2 passed to view() must be of the type array, null given, called in C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php on line 15
+#0 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(15): view('pesagens_view.p...', NULL)
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->pesar('<')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-10 12:03:00 --> Argument 2 passed to view() must be of the type array, null given, called in C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php on line 15
+#0 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(15): view('pesagens_view.p...', NULL)
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->pesar('<')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-10 12:03:33 --> Argument 2 passed to view() must be of the type array, null given, called in C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php on line 15
+#0 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(15): view('pesagens_view.p...', NULL)
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->pesar('<')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-10 12:03:50 --> Argument 2 passed to view() must be of the type array, null given, called in C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php on line 15
+#0 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(15): view('pesagens_view.p...', NULL)
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->pesar('<')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-10 12:04:23 --> Argument 2 passed to view() must be of the type array, null given, called in C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php on line 15
+#0 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(15): view('pesagens_view.p...', NULL)
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->pesar('<')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-10 12:04:37 --> Undefined variable: nome
+#0 C:\Dropbox\Projetos\www\glometal\app\Views\pesagens_view.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Dropbox\\Proj...', 37, Array)
+#1 C:\Dropbox\Projetos\www\glometal\system\View\View.php(214): include('C:\\Dropbox\\Proj...')
+#2 C:\Dropbox\Projetos\www\glometal\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Dropbox\Projetos\www\glometal\system\Common.php(1097): CodeIgniter\View\View->render('pesagens_view.p...', Array, true)
+#4 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(15): view('pesagens_view.p...', Array)
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->pesar('12')
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-01-10 12:05:03 --> Argument 2 passed to view() must be of the type array, null given, called in C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php on line 15
+#0 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(15): view('pesagens_view.p...', NULL)
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->pesar('<')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-10 12:05:37 --> Use of undefined constant id_entrada - assumed 'id_entrada' (this will throw an Error in a future version of PHP)
+#0 C:\Dropbox\Projetos\www\glometal\app\Views\pesagens_view.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefine...', 'C:\\Dropbox\\Proj...', 42, Array)
+#1 C:\Dropbox\Projetos\www\glometal\system\View\View.php(214): include('C:\\Dropbox\\Proj...')
+#2 C:\Dropbox\Projetos\www\glometal\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Dropbox\Projetos\www\glometal\system\Common.php(1097): CodeIgniter\View\View->render('pesagens_view.p...', Array, true)
+#4 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(15): view('pesagens_view.p...', Array)
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->pesar('12')
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-01-10 12:05:56 --> Argument 2 passed to view() must be of the type array, null given, called in C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php on line 15
+#0 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(15): view('pesagens_view.p...', NULL)
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->pesar('<')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-10 12:06:11 --> Argument 2 passed to view() must be of the type array, null given, called in C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php on line 15
+#0 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(15): view('pesagens_view.p...', NULL)
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->pesar('<')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-10 12:07:06 --> Argument 2 passed to view() must be of the type array, null given, called in C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php on line 15
+#0 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(15): view('pesagens_view.p...', NULL)
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->pesar('<')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-10 12:07:40 --> Argument 2 passed to view() must be of the type array, null given, called in C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php on line 15
+#0 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(15): view('pesagens_view.p...', NULL)
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->pesar('<')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-10 12:07:44 --> Argument 2 passed to view() must be of the type array, null given, called in C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php on line 15
+#0 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(15): view('pesagens_view.p...', NULL)
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->pesar('invoice-print.h...')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-10 12:08:40 --> Argument 2 passed to view() must be of the type array, null given, called in C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php on line 15
+#0 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(15): view('pesagens_view.p...', NULL)
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->pesar('<')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-10 12:08:58 --> Argument 2 passed to view() must be of the type array, null given, called in C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php on line 15
+#0 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(15): view('pesagens_view.p...', NULL)
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->pesar('<')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-10 12:12:46 --> Argument 2 passed to view() must be of the type array, null given, called in C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php on line 15
+#0 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(15): view('pesagens_view.p...', NULL)
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->pesar('<')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-10 12:13:05 --> Argument 2 passed to view() must be of the type array, null given, called in C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php on line 15
+#0 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(15): view('pesagens_view.p...', NULL)
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->pesar('<')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-10 12:13:29 --> Argument 2 passed to view() must be of the type array, null given, called in C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php on line 15
+#0 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(15): view('pesagens_view.p...', NULL)
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->pesar('<')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-10 12:52:08 --> Argument 2 passed to view() must be of the type array, null given, called in C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php on line 15
+#0 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(15): view('pesagens_view.p...', NULL)
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->pesar('<')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-10 14:08:53 --> Argument 2 passed to view() must be of the type array, null given, called in C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php on line 15
+#0 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(15): view('pesagens_view.p...', NULL)
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->pesar('<')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-10 16:00:29 --> Argument 2 passed to view() must be of the type array, null given, called in C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php on line 15
+#0 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(15): view('pesagens_view.p...', NULL)
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->pesar('<')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-01-10 16:25:35 --> Cannot delete or update a parent row: a foreign key constraint fails (`infinity_glometal`.`pesagens`, CONSTRAINT `pesagens_ibfk_1` FOREIGN KEY (`id_entrada`) REFERENCES `entradas` (`id_entrada`))
+CRITICAL - 2022-01-10 16:25:35 --> Cannot delete or update a parent row: a foreign key constraint fails (`infinity_glometal`.`pesagens`, CONSTRAINT `pesagens_ibfk_1` FOREIGN KEY (`id_entrada`) REFERENCES `entradas` (`id_entrada`))
+#0 C:\Dropbox\Projetos\www\glometal\system\Database\MySQLi\Connection.php(292): mysqli->query('DELETE FROM `en...', 0)
+#1 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `en...')
+#2 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `en...')
+#3 C:\Dropbox\Projetos\www\glometal\system\Database\BaseBuilder.php(2213): CodeIgniter\Database\BaseConnection->query('DELETE FROM `en...', Array, false)
+#4 C:\Dropbox\Projetos\www\glometal\system\Model.php(359): CodeIgniter\Database\BaseBuilder->delete()
+#5 C:\Dropbox\Projetos\www\glometal\system\BaseModel.php(963): CodeIgniter\Model->doDelete(Array, false)
+#6 C:\Dropbox\Projetos\www\glometal\app\Controllers\Entradas.php(32): CodeIgniter\BaseModel->delete(Array)
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Entradas->remover('2')
+#8 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entradas))
+#9 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-01-10 16:25:54 --> Argument 2 passed to view() must be of the type array, null given, called in C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php on line 15
+#0 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(15): view('pesagens_view.p...', NULL)
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->pesar('<')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-10 16:27:37 --> Argument 2 passed to view() must be of the type array, null given, called in C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php on line 15
+#0 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(15): view('pesagens_view.p...', NULL)
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->pesar('<')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-01-10 16:27:38 --> Unknown column 'pesagens.id_entradas' in 'on clause'
+CRITICAL - 2022-01-10 16:27:38 --> Unknown column 'pesagens.id_entradas' in 'on clause'
+#0 C:\Dropbox\Projetos\www\glometal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\Dropbox\Projetos\www\glometal\system\Database\BaseBuilder.php(1527): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(53): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTable.php(173): Hermawan\DataTables\DataTableQuery->countAll()
+#6 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(30): Hermawan\DataTables\DataTable->toJson()
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->listar('2')
+#8 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#9 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-01-10 16:29:06 --> Argument 2 passed to view() must be of the type array, null given, called in C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php on line 15
+#0 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(15): view('pesagens_view.p...', NULL)
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->pesar('<')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-01-10 16:29:06 --> Unknown column 'pesagens.id_entradas' in 'on clause'
+CRITICAL - 2022-01-10 16:29:06 --> Unknown column 'pesagens.id_entradas' in 'on clause'
+#0 C:\Dropbox\Projetos\www\glometal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\Dropbox\Projetos\www\glometal\system\Database\BaseBuilder.php(1527): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(53): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTable.php(173): Hermawan\DataTables\DataTableQuery->countAll()
+#6 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(31): Hermawan\DataTables\DataTable->toJson()
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->listar('2')
+#8 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#9 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-01-10 16:29:37 --> Argument 2 passed to view() must be of the type array, null given, called in C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php on line 15
+#0 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(15): view('pesagens_view.p...', NULL)
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->pesar('<')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-01-10 16:29:37 --> Unknown column 'pesagens.peso_disponivel' in 'field list'
+CRITICAL - 2022-01-10 16:29:37 --> Unknown column 'pesagens.peso_disponivel' in 'field list'
+#0 C:\Dropbox\Projetos\www\glometal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `pesagen...', 0)
+#1 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `pesagen...')
+#2 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `pesagen...')
+#3 C:\Dropbox\Projetos\www\glometal\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT `pesagen...', Array, false)
+#4 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(215): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(70): Hermawan\DataTables\DataTableQuery->queryResult()
+#6 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->getDataResult()
+#7 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(31): Hermawan\DataTables\DataTable->toJson()
+#8 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->listar('2')
+#9 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#10 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-01-10 16:31:23 --> Argument 2 passed to view() must be of the type array, null given, called in C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php on line 15
+#0 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(15): view('pesagens_view.p...', NULL)
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->pesar('<')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-10 16:31:23 --> Undefined property: stdClass::$id_entrada
+#0 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\Dropbox\\Proj...', 28, Array)
+#1 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(87): App\Controllers\Pesagens->App\Controllers\{closure}(Object(stdClass))
+#2 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->getDataResult()
+#3 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(31): Hermawan\DataTables\DataTable->toJson()
+#4 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->listar('2')
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-01-10 16:31:55 --> Argument 2 passed to view() must be of the type array, null given, called in C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php on line 15
+#0 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(15): view('pesagens_view.p...', NULL)
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->pesar('<')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-10 16:31:55 --> Undefined property: stdClass::$id_entrada
+#0 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\Dropbox\\Proj...', 27, Array)
+#1 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(87): App\Controllers\Pesagens->App\Controllers\{closure}(Object(stdClass))
+#2 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->getDataResult()
+#3 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(30): Hermawan\DataTables\DataTable->toJson()
+#4 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->listar('2')
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-01-10 16:32:54 --> Argument 2 passed to view() must be of the type array, null given, called in C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php on line 15
+#0 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(15): view('pesagens_view.p...', NULL)
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->pesar('<')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-10 16:32:55 --> Undefined property: stdClass::$id_entrada
+#0 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\Dropbox\\Proj...', 27, Array)
+#1 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(87): App\Controllers\Pesagens->App\Controllers\{closure}(Object(stdClass))
+#2 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->getDataResult()
+#3 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(30): Hermawan\DataTables\DataTable->toJson()
+#4 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->listar('2')
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-01-10 16:35:16 --> Argument 2 passed to view() must be of the type array, null given, called in C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php on line 15
+#0 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(15): view('pesagens_view.p...', NULL)
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->pesar('<')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-10 16:35:16 --> Undefined property: stdClass::$id_entrada
+#0 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\Dropbox\\Proj...', 27, Array)
+#1 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(87): App\Controllers\Pesagens->App\Controllers\{closure}(Object(stdClass))
+#2 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->getDataResult()
+#3 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(30): Hermawan\DataTables\DataTable->toJson()
+#4 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->listar('2')
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-01-10 16:35:43 --> Argument 2 passed to view() must be of the type array, null given, called in C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php on line 15
+#0 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(15): view('pesagens_view.p...', NULL)
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->pesar('<')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-10 16:36:46 --> Argument 2 passed to view() must be of the type array, null given, called in C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php on line 15
+#0 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(15): view('pesagens_view.p...', NULL)
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->pesar('<')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-10 16:36:46 --> Undefined property: stdClass::$id_pesagem
+#0 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(27): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\Dropbox\\Proj...', 27, Array)
+#1 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(87): App\Controllers\Pesagens->App\Controllers\{closure}(Object(stdClass))
+#2 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->getDataResult()
+#3 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(30): Hermawan\DataTables\DataTable->toJson()
+#4 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->listar('2')
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-01-10 16:37:45 --> Argument 2 passed to view() must be of the type array, null given, called in C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php on line 15
+#0 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(15): view('pesagens_view.p...', NULL)
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->pesar('<')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-10 16:38:55 --> Argument 2 passed to view() must be of the type array, null given, called in C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php on line 15
+#0 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(15): view('pesagens_view.p...', NULL)
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->pesar('<')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-10 16:39:11 --> Argument 2 passed to view() must be of the type array, null given, called in C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php on line 15
+#0 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(15): view('pesagens_view.p...', NULL)
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->pesar('<')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-10 16:39:37 --> syntax error, unexpected '}', expecting ';'
+#0 C:\Dropbox\Projetos\www\glometal\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('/pesagens/pesar...')
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('/pesagens/pesar...')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-10 16:39:51 --> Argument 2 passed to view() must be of the type array, null given, called in C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php on line 15
+#0 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(15): view('pesagens_view.p...', NULL)
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->pesar('<')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-10 16:40:27 --> Argument 2 passed to view() must be of the type array, null given, called in C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php on line 15
+#0 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(15): view('pesagens_view.p...', NULL)
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->pesar('<')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-01-10 17:59:32 --> Undefined variable: titulo_pagina
+#0 C:\Dropbox\Projetos\www\glometal\app\Views\base\header.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Dropbox\\Proj...', 7, Array)
+#1 C:\Dropbox\Projetos\www\glometal\system\View\View.php(214): include('C:\\Dropbox\\Proj...')
+#2 C:\Dropbox\Projetos\www\glometal\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Dropbox\Projetos\www\glometal\system\Common.php(1097): CodeIgniter\View\View->render('base/header.php', Array, true)
+#4 C:\Dropbox\Projetos\www\glometal\app\Controllers\Home.php(9): view('base/header.php')
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Home->index()
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-01-10 18:07:22 --> Undefined variable: titulo_pagina
+#0 C:\Dropbox\Projetos\www\glometal\app\Views\base\header.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Dropbox\\Proj...', 7, Array)
+#1 C:\Dropbox\Projetos\www\glometal\system\View\View.php(214): include('C:\\Dropbox\\Proj...')
+#2 C:\Dropbox\Projetos\www\glometal\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Dropbox\Projetos\www\glometal\system\Common.php(1097): CodeIgniter\View\View->render('base/header.php', Array, true)
+#4 C:\Dropbox\Projetos\www\glometal\app\Controllers\Home.php(9): view('base/header.php')
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Home->index()
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

@@ -1,0 +1,43 @@
+ERROR - 2022-09-13 08:55:34 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 22
+ERROR - 2022-09-13 08:57:56 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 22
+ERROR - 2022-09-13 08:58:05 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 22
+ERROR - 2022-09-13 09:10:30 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 22
+ERROR - 2022-09-13 09:12:28 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 22
+ERROR - 2022-09-13 09:13:48 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 22
+CRITICAL - 2022-09-13 09:14:54 --> ERROR é um level de log inválido.
+#0 C:\Dropbox\Projetos\www\glometal\system\Log\Logger.php(257): CodeIgniter\Log\Exceptions\LogException::forInvalidLogLevel('ERROR')
+#1 C:\Dropbox\Projetos\www\glometal\system\Common.php(765): CodeIgniter\Log\Logger->log('ERROR', 'AQUI', Array)
+#2 C:\Dropbox\Projetos\www\glometal\app\Controllers\Separacao.php(160): log_message('ERROR', 'AQUI')
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Separacao->remover('46')
+#4 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Separacao))
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2022-09-13 09:16:01 --> Unknown column 'id_entrada' in 'field list'
+CRITICAL - 2022-09-13 09:16:01 --> Call to a member function getRow() on bool
+#0 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Separacao->remover('46')
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Separacao))
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2022-09-13 09:27:49 --> Error connecting to the database: Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu.
+
+CRITICAL - 2022-09-13 09:27:49 --> Unable to connect to the database.
+Main connection [MySQLi]: Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu.
+
+#0 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Dropbox\Projetos\www\glometal\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT `id_entr...', Array, false)
+#2 C:\Dropbox\Projetos\www\glometal\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\Dropbox\Projetos\www\glometal\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(22): CodeIgniter\BaseModel->first()
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->pesar('97')
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-09-13 09:50:55 --> Cannot delete or update a parent row: a foreign key constraint fails (`infinity_glometal`.`separacao`, CONSTRAINT `fk_separacao_id_entrada_separacao` FOREIGN KEY (`id_entrada_separacao`) REFERENCES `entradas` (`id_entrada`) ON DELETE NO ACTION)
+ERROR - 2022-09-13 09:54:46 --> Cannot delete or update a parent row: a foreign key constraint fails (`infinity_glometal`.`entradas`, CONSTRAINT `fk_entradas_id_entrada_origem` FOREIGN KEY (`id_entrada_origem`) REFERENCES `entradas` (`id_entrada`))

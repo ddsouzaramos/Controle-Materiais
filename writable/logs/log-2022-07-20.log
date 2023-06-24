@@ -1,0 +1,47 @@
+CRITICAL - 2022-07-20 17:38:02 --> A non-numeric value encountered
+#0 C:\Dropbox\Projetos\www\glometal\app\Views\pesagens_view.php(250): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\Dropbox\\Proj...', 250, Array)
+#1 C:\Dropbox\Projetos\www\glometal\system\View\View.php(214): include('C:\\Dropbox\\Proj...')
+#2 C:\Dropbox\Projetos\www\glometal\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Dropbox\Projetos\www\glometal\system\Common.php(1097): CodeIgniter\View\View->render('pesagens_view.p...', Array, true)
+#4 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(23): view('pesagens_view.p...', Array)
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->pesar('85')
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-07-20 17:38:21 --> A non-numeric value encountered
+#0 C:\Dropbox\Projetos\www\glometal\app\Views\pesagens_view.php(250): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\Dropbox\\Proj...', 250, Array)
+#1 C:\Dropbox\Projetos\www\glometal\system\View\View.php(214): include('C:\\Dropbox\\Proj...')
+#2 C:\Dropbox\Projetos\www\glometal\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Dropbox\Projetos\www\glometal\system\Common.php(1097): CodeIgniter\View\View->render('pesagens_view.p...', Array, true)
+#4 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(23): view('pesagens_view.p...', Array)
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->pesar('85')
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-07-20 17:39:20 --> A non-numeric value encountered
+#0 C:\Dropbox\Projetos\www\glometal\app\Views\pesagens_view.php(250): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'C:\\Dropbox\\Proj...', 250, Array)
+#1 C:\Dropbox\Projetos\www\glometal\system\View\View.php(214): include('C:\\Dropbox\\Proj...')
+#2 C:\Dropbox\Projetos\www\glometal\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Dropbox\Projetos\www\glometal\system\Common.php(1097): CodeIgniter\View\View->render('pesagens_view.p...', Array, true)
+#4 C:\Dropbox\Projetos\www\glometal\app\Controllers\Pesagens.php(23): view('pesagens_view.p...', Array)
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Pesagens->pesar('85')
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pesagens))
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-07-20 18:05:53 --> Unknown column 'peso_liquido' in 'field list'
+CRITICAL - 2022-07-20 18:05:53 --> Call to a member function getRow() on bool
+#0 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Entradas->buscar_peso_entrada('87')
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entradas))
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2022-07-20 18:06:07 --> Unknown column 'peso_liquido' in 'field list'
+CRITICAL - 2022-07-20 18:06:07 --> Call to a member function getRow() on bool
+#0 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Entradas->buscar_peso_entrada('87')
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entradas))
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}

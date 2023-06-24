@@ -1,0 +1,178 @@
+ERROR - 2022-05-12 10:14:52 --> entrei1
+ERROR - 2022-05-12 10:14:52 --> entrei1
+CRITICAL - 2022-05-12 10:15:31 --> Argument 2 passed to log_message() must be of the type string, null given, called in C:\Dropbox\Projetos\www\glometal\app\Controllers\Processos.php on line 179
+#0 C:\Dropbox\Projetos\www\glometal\app\Controllers\Processos.php(179): log_message('error', NULL)
+#1 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(191): App\Controllers\Processos->App\Controllers\{closure}(Object(CodeIgniter\Database\MySQLi\Builder), Object(stdClass))
+#2 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(181): Hermawan\DataTables\DataTableQuery->queryFilter(Object(CodeIgniter\Database\MySQLi\Builder))
+#3 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(61): Hermawan\DataTables\DataTableQuery->queryFilterSearch(Object(CodeIgniter\Database\MySQLi\Builder))
+#4 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTable.php(174): Hermawan\DataTables\DataTableQuery->countFiltered()
+#5 C:\Dropbox\Projetos\www\glometal\app\Controllers\Processos.php(186): Hermawan\DataTables\DataTable->toJson()
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Processos->listar_entradas_disponiveis()
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Processos))
+#8 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-05-12 10:15:41 --> Argument 2 passed to log_message() must be of the type string, null given, called in C:\Dropbox\Projetos\www\glometal\app\Controllers\Processos.php on line 179
+#0 C:\Dropbox\Projetos\www\glometal\app\Controllers\Processos.php(179): log_message('error', NULL)
+#1 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(191): App\Controllers\Processos->App\Controllers\{closure}(Object(CodeIgniter\Database\MySQLi\Builder), Object(stdClass))
+#2 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(181): Hermawan\DataTables\DataTableQuery->queryFilter(Object(CodeIgniter\Database\MySQLi\Builder))
+#3 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(61): Hermawan\DataTables\DataTableQuery->queryFilterSearch(Object(CodeIgniter\Database\MySQLi\Builder))
+#4 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTable.php(174): Hermawan\DataTables\DataTableQuery->countFiltered()
+#5 C:\Dropbox\Projetos\www\glometal\app\Controllers\Processos.php(186): Hermawan\DataTables\DataTable->toJson()
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Processos->listar_entradas_disponiveis()
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Processos))
+#8 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-05-12 10:15:44 --> Argument 2 passed to log_message() must be of the type string, null given, called in C:\Dropbox\Projetos\www\glometal\app\Controllers\Processos.php on line 179
+#0 C:\Dropbox\Projetos\www\glometal\app\Controllers\Processos.php(179): log_message('error', NULL)
+#1 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(191): App\Controllers\Processos->App\Controllers\{closure}(Object(CodeIgniter\Database\MySQLi\Builder), Object(stdClass))
+#2 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(181): Hermawan\DataTables\DataTableQuery->queryFilter(Object(CodeIgniter\Database\MySQLi\Builder))
+#3 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(61): Hermawan\DataTables\DataTableQuery->queryFilterSearch(Object(CodeIgniter\Database\MySQLi\Builder))
+#4 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTable.php(174): Hermawan\DataTables\DataTableQuery->countFiltered()
+#5 C:\Dropbox\Projetos\www\glometal\app\Controllers\Processos.php(186): Hermawan\DataTables\DataTable->toJson()
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Processos->listar_entradas_disponiveis()
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Processos))
+#8 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-05-12 10:18:11 --> 
+ERROR - 2022-05-12 10:18:11 --> 
+ERROR - 2022-05-12 10:18:13 --> 
+ERROR - 2022-05-12 10:18:13 --> 
+ERROR - 2022-05-12 10:18:24 --> 5
+ERROR - 2022-05-12 10:18:24 --> entrei
+ERROR - 2022-05-12 10:18:24 --> 5
+ERROR - 2022-05-12 10:18:24 --> entrei
+ERROR - 2022-05-12 10:18:40 --> 5
+ERROR - 2022-05-12 10:18:40 --> entrei
+ERROR - 2022-05-12 10:18:40 --> 5
+ERROR - 2022-05-12 10:18:40 --> entrei
+ERROR - 2022-05-12 10:18:51 --> 5
+ERROR - 2022-05-12 10:18:51 --> entrei
+ERROR - 2022-05-12 10:18:51 --> 5
+ERROR - 2022-05-12 10:18:51 --> entrei
+ERROR - 2022-05-12 10:18:52 --> 5
+ERROR - 2022-05-12 10:18:52 --> entrei
+ERROR - 2022-05-12 10:18:52 --> 5
+ERROR - 2022-05-12 10:18:52 --> entrei
+ERROR - 2022-05-12 10:20:41 --> 
+ERROR - 2022-05-12 10:20:41 --> 
+ERROR - 2022-05-12 10:24:15 --> 5
+ERROR - 2022-05-12 10:24:15 --> entrei
+ERROR - 2022-05-12 10:24:15 --> 5
+ERROR - 2022-05-12 10:24:15 --> entrei
+ERROR - 2022-05-12 10:24:20 --> 5
+ERROR - 2022-05-12 10:24:20 --> entrei
+ERROR - 2022-05-12 10:24:20 --> 5
+ERROR - 2022-05-12 10:24:20 --> entrei
+ERROR - 2022-05-12 10:24:21 --> 5
+ERROR - 2022-05-12 10:24:21 --> entrei
+ERROR - 2022-05-12 10:24:21 --> 5
+ERROR - 2022-05-12 10:24:21 --> entrei
+ERROR - 2022-05-12 10:24:21 --> 5
+ERROR - 2022-05-12 10:24:21 --> entrei
+ERROR - 2022-05-12 10:24:21 --> 5
+ERROR - 2022-05-12 10:24:21 --> entrei
+ERROR - 2022-05-12 10:24:21 --> 5
+ERROR - 2022-05-12 10:24:21 --> entrei
+ERROR - 2022-05-12 10:24:21 --> 5
+ERROR - 2022-05-12 10:24:21 --> entrei
+ERROR - 2022-05-12 10:24:22 --> 5
+ERROR - 2022-05-12 10:24:22 --> entrei
+ERROR - 2022-05-12 10:24:22 --> 5
+ERROR - 2022-05-12 10:24:22 --> entrei
+ERROR - 2022-05-12 10:24:22 --> 5
+ERROR - 2022-05-12 10:24:22 --> entrei
+ERROR - 2022-05-12 10:24:22 --> 5
+ERROR - 2022-05-12 10:24:22 --> entrei
+ERROR - 2022-05-12 10:24:22 --> 5
+ERROR - 2022-05-12 10:24:22 --> entrei
+ERROR - 2022-05-12 10:24:22 --> 5
+ERROR - 2022-05-12 10:24:22 --> entrei
+ERROR - 2022-05-12 10:24:22 --> 5
+ERROR - 2022-05-12 10:24:22 --> entrei
+ERROR - 2022-05-12 10:24:22 --> 5
+ERROR - 2022-05-12 10:24:22 --> entrei
+ERROR - 2022-05-12 10:24:23 --> 5
+ERROR - 2022-05-12 10:24:23 --> entrei
+ERROR - 2022-05-12 10:24:23 --> 5
+ERROR - 2022-05-12 10:24:23 --> entrei
+CRITICAL - 2022-05-12 11:18:36 --> array_merge(): Expected parameter 1 to be an array, string given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_merge(): ...', 'C:\\Dropbox\\Proj...', 1310, Array)
+#1 C:\Dropbox\Projetos\www\glometal\system\Database\BaseBuilder.php(1310): array_merge('\nORDER BY `id_e...', Array)
+#2 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(138): CodeIgniter\Database\BaseBuilder->orderBy('id_entrada', ' ASC')
+#3 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(202): Hermawan\DataTables\DataTableQuery->queryOrder(Object(CodeIgniter\Database\MySQLi\Builder))
+#4 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(70): Hermawan\DataTables\DataTableQuery->queryResult()
+#5 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->getDataResult()
+#6 C:\Dropbox\Projetos\www\glometal\app\Controllers\Processos.php(188): Hermawan\DataTables\DataTable->toJson()
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Processos->listar_entradas_disponiveis()
+#8 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Processos))
+#9 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-05-12 11:19:16 --> array_merge(): Expected parameter 1 to be an array, string given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_merge(): ...', 'C:\\Dropbox\\Proj...', 1310, Array)
+#1 C:\Dropbox\Projetos\www\glometal\system\Database\BaseBuilder.php(1310): array_merge('\nORDER BY `id_e...', Array)
+#2 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(138): CodeIgniter\Database\BaseBuilder->orderBy('data_entrada', ' ASC')
+#3 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(202): Hermawan\DataTables\DataTableQuery->queryOrder(Object(CodeIgniter\Database\MySQLi\Builder))
+#4 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(70): Hermawan\DataTables\DataTableQuery->queryResult()
+#5 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->getDataResult()
+#6 C:\Dropbox\Projetos\www\glometal\app\Controllers\Processos.php(188): Hermawan\DataTables\DataTable->toJson()
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Processos->listar_entradas_disponiveis()
+#8 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Processos))
+#9 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-05-12 11:28:42 --> array_merge(): Expected parameter 1 to be an array, string given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_merge(): ...', 'C:\\Dropbox\\Proj...', 1310, Array)
+#1 C:\Dropbox\Projetos\www\glometal\system\Database\BaseBuilder.php(1310): array_merge('\nORDER BY `id_e...', Array)
+#2 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(138): CodeIgniter\Database\BaseBuilder->orderBy('id_entrada', ' ASC')
+#3 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(202): Hermawan\DataTables\DataTableQuery->queryOrder(Object(CodeIgniter\Database\MySQLi\Builder))
+#4 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(70): Hermawan\DataTables\DataTableQuery->queryResult()
+#5 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->getDataResult()
+#6 C:\Dropbox\Projetos\www\glometal\app\Controllers\Processos.php(188): Hermawan\DataTables\DataTable->toJson()
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Processos->listar_entradas_disponiveis()
+#8 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Processos))
+#9 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-05-12 12:31:28 --> array_merge(): Expected parameter 1 to be an array, string given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_merge(): ...', 'C:\\Dropbox\\Proj...', 1310, Array)
+#1 C:\Dropbox\Projetos\www\glometal\system\Database\BaseBuilder.php(1310): array_merge('\nORDER BY `entr...', Array)
+#2 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(138): CodeIgniter\Database\BaseBuilder->orderBy('id_processo_ite...', ' ASC')
+#3 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(202): Hermawan\DataTables\DataTableQuery->queryOrder(Object(CodeIgniter\Database\MySQLi\Builder))
+#4 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(70): Hermawan\DataTables\DataTableQuery->queryResult()
+#5 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->getDataResult()
+#6 C:\Dropbox\Projetos\www\glometal\app\Controllers\Processos.php(163): Hermawan\DataTables\DataTable->toJson()
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Processos->listar_itens('8')
+#8 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Processos))
+#9 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-05-12 13:51:09 --> Class 'App\Controllers\Processos_itens_model' not found
+#0 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Processos->salvar_item()
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Processos))
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2022-05-12 13:58:17 --> bateu aqui sim
+ERROR - 2022-05-12 13:59:19 --> isso: 8
+ERROR - 2022-05-12 14:00:50 --> isso: 8
+ERROR - 2022-05-12 14:01:30 --> isso: 49
+ERROR - 2022-05-12 14:02:36 --> isso: 44
+ERROR - 2022-05-12 17:30:21 --> isso: 48
+ERROR - 2022-05-12 17:30:38 --> isso: 48
+CRITICAL - 2022-05-12 17:31:11 --> array_merge(): Expected parameter 1 to be an array, string given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_merge(): ...', 'C:\\Dropbox\\Proj...', 1310, Array)
+#1 C:\Dropbox\Projetos\www\glometal\system\Database\BaseBuilder.php(1310): array_merge('\nORDER BY `entr...', Array)
+#2 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(138): CodeIgniter\Database\BaseBuilder->orderBy('peso_utilizado', ' ASC')
+#3 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(202): Hermawan\DataTables\DataTableQuery->queryOrder(Object(CodeIgniter\Database\MySQLi\Builder))
+#4 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(70): Hermawan\DataTables\DataTableQuery->queryResult()
+#5 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->getDataResult()
+#6 C:\Dropbox\Projetos\www\glometal\app\Controllers\Processos.php(164): Hermawan\DataTables\DataTable->toJson()
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Processos->listar_itens('8')
+#8 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Processos))
+#9 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}

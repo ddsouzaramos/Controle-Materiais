@@ -1,0 +1,33 @@
+ERROR - 2022-05-23 09:49:58 --> Array
+(
+    [peso_saida] => 500.000
+)
+
+ERROR - 2022-05-23 10:29:31 --> Error connecting to the database: Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu.
+
+CRITICAL - 2022-05-23 10:29:31 --> Unable to connect to the database.
+Main connection [MySQLi]: Uma tentativa de conexão falhou porque o componente conectado não respondeu
+corretamente após um período de tempo ou a conexão estabelecida falhou
+porque o host conectado não respondeu.
+
+#0 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Dropbox\Projetos\www\glometal\system\Model.php(721): CodeIgniter\Database\BaseConnection->query('select fornos.i...')
+#2 C:\Dropbox\Projetos\www\glometal\app\Controllers\Fornos.php(130): CodeIgniter\Model->__call('query', Array)
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Fornos->listar_fornos_disponiveis()
+#4 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fornos))
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2022-05-23 14:35:18 --> Array
+(
+    [peso_saida] => 1000.000
+)
+
+ERROR - 2022-05-23 14:38:19 --> Array
+(
+    [peso_saida] => 1100.000
+)
+
+ERROR - 2022-05-23 14:53:40 --> Cannot delete or update a parent row: a foreign key constraint fails (`infinity_glometal`.`pesagens`, CONSTRAINT `fk_pesagens_id_entrada` FOREIGN KEY (`id_entrada`) REFERENCES `entradas` (`id_entrada`))

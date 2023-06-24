@@ -1,0 +1,147 @@
+CRITICAL - 2022-01-04 07:36:20 --> Undefined variable: titulo_pagina
+#0 C:\Dropbox\Projetos\www\glometal\app\Views\base\header.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Dropbox\\Proj...', 7, Array)
+#1 C:\Dropbox\Projetos\www\glometal\system\View\View.php(214): include('C:\\Dropbox\\Proj...')
+#2 C:\Dropbox\Projetos\www\glometal\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Dropbox\Projetos\www\glometal\system\Common.php(1097): CodeIgniter\View\View->render('base/header.php', Array, true)
+#4 C:\Dropbox\Projetos\www\glometal\app\Controllers\Home.php(9): view('base/header.php')
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Home->index()
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-04 07:36:39 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ASC, '%d/%m/%Y') ASC
+ LIMIT 10' at line 5
+CRITICAL - 2022-01-04 07:36:39 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ASC, '%d/%m/%Y') ASC
+ LIMIT 10' at line 5
+#0 C:\Dropbox\Projetos\www\glometal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `entrada...', 0)
+#1 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `entrada...')
+#2 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `entrada...')
+#3 C:\Dropbox\Projetos\www\glometal\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT `entrada...', Array, false)
+#4 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(215): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(70): Hermawan\DataTables\DataTableQuery->queryResult()
+#6 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTable.php(175): Hermawan\DataTables\DataTableQuery->getDataResult()
+#7 C:\Dropbox\Projetos\www\glometal\app\Controllers\Entradas.php(26): Hermawan\DataTables\DataTable->toJson()
+#8 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Entradas->listar()
+#9 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entradas))
+#10 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-01-04 09:34:33 --> syntax error, unexpected '?>', expecting ')'
+#0 C:\Dropbox\Projetos\www\glometal\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\Dropbox\Projetos\www\glometal\system\Common.php(1097): CodeIgniter\View\View->render('base/header.php', Array, true)
+#2 C:\Dropbox\Projetos\www\glometal\app\Views\entradas_view.php(3): view('base/header.php', Array)
+#3 C:\Dropbox\Projetos\www\glometal\system\View\View.php(214): include('C:\\Dropbox\\Proj...')
+#4 C:\Dropbox\Projetos\www\glometal\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\Dropbox\Projetos\www\glometal\system\Common.php(1097): CodeIgniter\View\View->render('entradas_view.p...', Array, true)
+#6 C:\Dropbox\Projetos\www\glometal\app\Controllers\Entradas.php(10): view('entradas_view.p...')
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Entradas->index()
+#8 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Entradas))
+#9 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2022-01-04 12:39:00 --> Object of class CodeIgniter\Database\MySQLi\Builder could not be converted to string
+#0 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Fornecedores->listar_select()
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fornecedores))
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-04 12:41:56 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::findAll()
+#0 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Fornecedores->listar_select()
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fornecedores))
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-01-04 15:24:02 --> Undefined variable: titulo_pagina
+#0 C:\Dropbox\Projetos\www\glometal\app\Views\base\header.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Dropbox\\Proj...', 7, Array)
+#1 C:\Dropbox\Projetos\www\glometal\system\View\View.php(214): include('C:\\Dropbox\\Proj...')
+#2 C:\Dropbox\Projetos\www\glometal\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Dropbox\Projetos\www\glometal\system\Common.php(1097): CodeIgniter\View\View->render('base/header.php', Array, true)
+#4 C:\Dropbox\Projetos\www\glometal\app\Controllers\Home.php(9): view('base/header.php')
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Home->index()
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-01-04 15:50:53 --> Undefined variable: titulo_pagina
+#0 C:\Dropbox\Projetos\www\glometal\app\Views\base\header.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Dropbox\\Proj...', 7, Array)
+#1 C:\Dropbox\Projetos\www\glometal\system\View\View.php(214): include('C:\\Dropbox\\Proj...')
+#2 C:\Dropbox\Projetos\www\glometal\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Dropbox\Projetos\www\glometal\system\Common.php(1097): CodeIgniter\View\View->render('base/header.php', Array, true)
+#4 C:\Dropbox\Projetos\www\glometal\app\Controllers\Home.php(9): view('base/header.php')
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Home->index()
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-01-04 15:51:40 --> Undefined variable: titulo_pagina
+#0 C:\Dropbox\Projetos\www\glometal\app\Views\base\header.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Dropbox\\Proj...', 7, Array)
+#1 C:\Dropbox\Projetos\www\glometal\system\View\View.php(214): include('C:\\Dropbox\\Proj...')
+#2 C:\Dropbox\Projetos\www\glometal\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Dropbox\Projetos\www\glometal\system\Common.php(1097): CodeIgniter\View\View->render('base/header.php', Array, true)
+#4 C:\Dropbox\Projetos\www\glometal\app\Controllers\Home.php(9): view('base/header.php')
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Home->index()
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-01-04 18:35:03 --> Undefined variable: titulo_pagina
+#0 C:\Dropbox\Projetos\www\glometal\app\Views\base\header.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Dropbox\\Proj...', 7, Array)
+#1 C:\Dropbox\Projetos\www\glometal\system\View\View.php(214): include('C:\\Dropbox\\Proj...')
+#2 C:\Dropbox\Projetos\www\glometal\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Dropbox\Projetos\www\glometal\system\Common.php(1097): CodeIgniter\View\View->render('base/header.php', Array, true)
+#4 C:\Dropbox\Projetos\www\glometal\app\Controllers\Home.php(9): view('base/header.php')
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Home->index()
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-01-04 18:40:14 --> Undefined variable: titulo_pagina
+#0 C:\Dropbox\Projetos\www\glometal\app\Views\base\header.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Dropbox\\Proj...', 7, Array)
+#1 C:\Dropbox\Projetos\www\glometal\system\View\View.php(214): include('C:\\Dropbox\\Proj...')
+#2 C:\Dropbox\Projetos\www\glometal\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Dropbox\Projetos\www\glometal\system\Common.php(1097): CodeIgniter\View\View->render('base/header.php', Array, true)
+#4 C:\Dropbox\Projetos\www\glometal\app\Controllers\Home.php(9): view('base/header.php')
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Home->index()
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-01-04 22:19:07 --> Undefined variable: titulo_pagina
+#0 C:\Dropbox\Projetos\www\glometal\app\Views\base\header.php(7): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Dropbox\\Proj...', 7, Array)
+#1 C:\Dropbox\Projetos\www\glometal\system\View\View.php(214): include('C:\\Dropbox\\Proj...')
+#2 C:\Dropbox\Projetos\www\glometal\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Dropbox\Projetos\www\glometal\system\Common.php(1097): CodeIgniter\View\View->render('base/header.php', Array, true)
+#4 C:\Dropbox\Projetos\www\glometal\app\Controllers\Home.php(9): view('base/header.php')
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Home->index()
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-01-04 22:40:44 --> Unknown column 'id_fornecedo' in 'field list'
+CRITICAL - 2022-01-04 22:40:44 --> Unknown column 'id_fornecedo' in 'field list'
+#0 C:\Dropbox\Projetos\www\glometal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `id_forn...', 0)
+#1 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id_forn...')
+#2 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id_forn...')
+#3 C:\Dropbox\Projetos\www\glometal\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT `id_forn...', Array, false)
+#4 C:\Dropbox\Projetos\www\glometal\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Dropbox\Projetos\www\glometal\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Dropbox\Projetos\www\glometal\app\Controllers\Fornecedores.php(103): CodeIgniter\BaseModel->findAll()
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Fornecedores->listar_select()
+#8 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fornecedores))
+#9 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2022-01-04 22:43:10 --> Unknown column 'id_fornecedo' in 'field list'
+CRITICAL - 2022-01-04 22:43:10 --> Unknown column 'id_fornecedo' in 'field list'
+#0 C:\Dropbox\Projetos\www\glometal\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `id_forn...', 0)
+#1 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id_forn...')
+#2 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id_forn...')
+#3 C:\Dropbox\Projetos\www\glometal\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT `id_forn...', Array, false)
+#4 C:\Dropbox\Projetos\www\glometal\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Dropbox\Projetos\www\glometal\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Dropbox\Projetos\www\glometal\app\Controllers\Fornecedores.php(103): CodeIgniter\BaseModel->findAll()
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Fornecedores->listar_select()
+#8 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fornecedores))
+#9 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}

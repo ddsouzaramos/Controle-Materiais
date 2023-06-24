@@ -1,0 +1,722 @@
+CRITICAL - 2021-12-24 11:14:32 --> syntax error, unexpected ';'
+#0 C:\Dropbox\Projetos\www\glometal\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('/usuarios/salva...')
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('/usuarios/salva...')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-24 11:14:50 --> Undefined variable: status
+#0 C:\Dropbox\Projetos\www\glometal\app\Controllers\Usuarios.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Dropbox\\Proj...', 37, Array)
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Usuarios->salvar()
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-12-24 11:30:00 --> Error connecting to the database: php_network_getaddresses: getaddrinfo failed: Este geralmente é um erro temporário durante a resolução do nome do host e significa que o servidor local não recebeu uma resposta de um servidor autorizado. 
+CRITICAL - 2021-12-24 11:30:00 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: Este geralmente é um erro temporário durante a resolução do nome do host e significa que o servidor local não recebeu uma resposta de um servidor autorizado. 
+#0 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Dropbox\Projetos\www\glometal\system\Database\BaseBuilder.php(1527): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#2 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(53): CodeIgniter\Database\BaseBuilder->countAllResults()
+#3 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTable.php(173): Hermawan\DataTables\DataTableQuery->countAll()
+#4 C:\Dropbox\Projetos\www\glometal\app\Controllers\Usuarios.php(23): Hermawan\DataTables\DataTable->toJson()
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Usuarios->listar()
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-24 11:30:00 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Malformed UTF-8 characters, possibly incorrectly encoded". in C:\Dropbox\Projetos\www\glometal\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\Dropbox\Projetos\www\glometal\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\Dropbox\Projetos\www\glometal\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\Dropbox\Projetos\www\glometal\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\Dropbox\Projetos\www\glometal\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2021-12-24 11:30:03 --> Error connecting to the database: php_network_getaddresses: getaddrinfo failed: Este geralmente é um erro temporário durante a resolução do nome do host e significa que o servidor local não recebeu uma resposta de um servidor autorizado. 
+CRITICAL - 2021-12-24 11:30:03 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: Este geralmente é um erro temporário durante a resolução do nome do host e significa que o servidor local não recebeu uma resposta de um servidor autorizado. 
+#0 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Dropbox\Projetos\www\glometal\system\Database\BaseBuilder.php(1527): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#2 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(53): CodeIgniter\Database\BaseBuilder->countAllResults()
+#3 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTable.php(173): Hermawan\DataTables\DataTableQuery->countAll()
+#4 C:\Dropbox\Projetos\www\glometal\app\Controllers\Usuarios.php(23): Hermawan\DataTables\DataTable->toJson()
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Usuarios->listar()
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-24 11:30:03 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Malformed UTF-8 characters, possibly incorrectly encoded". in C:\Dropbox\Projetos\www\glometal\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\Dropbox\Projetos\www\glometal\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\Dropbox\Projetos\www\glometal\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\Dropbox\Projetos\www\glometal\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\Dropbox\Projetos\www\glometal\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2021-12-24 11:30:47 --> Error connecting to the database: php_network_getaddresses: getaddrinfo failed: Este geralmente é um erro temporário durante a resolução do nome do host e significa que o servidor local não recebeu uma resposta de um servidor autorizado. 
+CRITICAL - 2021-12-24 11:30:47 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: Este geralmente é um erro temporário durante a resolução do nome do host e significa que o servidor local não recebeu uma resposta de um servidor autorizado. 
+#0 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Dropbox\Projetos\www\glometal\system\Database\BaseBuilder.php(1527): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#2 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(53): CodeIgniter\Database\BaseBuilder->countAllResults()
+#3 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTable.php(173): Hermawan\DataTables\DataTableQuery->countAll()
+#4 C:\Dropbox\Projetos\www\glometal\app\Controllers\Usuarios.php(23): Hermawan\DataTables\DataTable->toJson()
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Usuarios->listar()
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-24 11:30:47 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Malformed UTF-8 characters, possibly incorrectly encoded". in C:\Dropbox\Projetos\www\glometal\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\Dropbox\Projetos\www\glometal\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\Dropbox\Projetos\www\glometal\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\Dropbox\Projetos\www\glometal\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\Dropbox\Projetos\www\glometal\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-12-24 11:30:50 --> Argument 1 passed to CodeIgniter\Validation\Validation::setRules() must be of the type array, bool given, called in C:\Dropbox\Projetos\www\glometal\system\Controller.php on line 160
+#0 C:\Dropbox\Projetos\www\glometal\system\Controller.php(160): CodeIgniter\Validation\Validation->setRules(false, Array)
+#1 C:\Dropbox\Projetos\www\glometal\app\Controllers\Usuarios.php(52): CodeIgniter\Controller->validate(false)
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Usuarios->salvar()
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#4 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-12-24 11:30:59 --> Argument 1 passed to CodeIgniter\Validation\Validation::setRules() must be of the type array, bool given, called in C:\Dropbox\Projetos\www\glometal\system\Controller.php on line 160
+#0 C:\Dropbox\Projetos\www\glometal\system\Controller.php(160): CodeIgniter\Validation\Validation->setRules(false, Array)
+#1 C:\Dropbox\Projetos\www\glometal\app\Controllers\Usuarios.php(52): CodeIgniter\Controller->validate(false)
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Usuarios->salvar()
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#4 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2021-12-24 11:31:17 --> Error connecting to the database: php_network_getaddresses: getaddrinfo failed: Este geralmente é um erro temporário durante a resolução do nome do host e significa que o servidor local não recebeu uma resposta de um servidor autorizado. 
+CRITICAL - 2021-12-24 11:31:17 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: Este geralmente é um erro temporário durante a resolução do nome do host e significa que o servidor local não recebeu uma resposta de um servidor autorizado. 
+#0 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Dropbox\Projetos\www\glometal\system\Database\BaseBuilder.php(1527): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#2 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(53): CodeIgniter\Database\BaseBuilder->countAllResults()
+#3 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTable.php(173): Hermawan\DataTables\DataTableQuery->countAll()
+#4 C:\Dropbox\Projetos\www\glometal\app\Controllers\Usuarios.php(23): Hermawan\DataTables\DataTable->toJson()
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Usuarios->listar()
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-24 11:31:17 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Malformed UTF-8 characters, possibly incorrectly encoded". in C:\Dropbox\Projetos\www\glometal\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\Dropbox\Projetos\www\glometal\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\Dropbox\Projetos\www\glometal\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\Dropbox\Projetos\www\glometal\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\Dropbox\Projetos\www\glometal\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2021-12-24 11:33:06 --> Error connecting to the database: php_network_getaddresses: getaddrinfo failed: Este geralmente é um erro temporário durante a resolução do nome do host e significa que o servidor local não recebeu uma resposta de um servidor autorizado. 
+CRITICAL - 2021-12-24 11:33:06 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: Este geralmente é um erro temporário durante a resolução do nome do host e significa que o servidor local não recebeu uma resposta de um servidor autorizado. 
+#0 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Dropbox\Projetos\www\glometal\system\Database\BaseBuilder.php(1527): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#2 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(53): CodeIgniter\Database\BaseBuilder->countAllResults()
+#3 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTable.php(173): Hermawan\DataTables\DataTableQuery->countAll()
+#4 C:\Dropbox\Projetos\www\glometal\app\Controllers\Usuarios.php(23): Hermawan\DataTables\DataTable->toJson()
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Usuarios->listar()
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-24 11:33:06 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Malformed UTF-8 characters, possibly incorrectly encoded". in C:\Dropbox\Projetos\www\glometal\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\Dropbox\Projetos\www\glometal\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\Dropbox\Projetos\www\glometal\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\Dropbox\Projetos\www\glometal\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\Dropbox\Projetos\www\glometal\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2021-12-24 11:33:27 --> Error connecting to the database: php_network_getaddresses: getaddrinfo failed: Este geralmente é um erro temporário durante a resolução do nome do host e significa que o servidor local não recebeu uma resposta de um servidor autorizado. 
+CRITICAL - 2021-12-24 11:33:27 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: Este geralmente é um erro temporário durante a resolução do nome do host e significa que o servidor local não recebeu uma resposta de um servidor autorizado. 
+#0 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Dropbox\Projetos\www\glometal\system\Database\BaseBuilder.php(1527): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#2 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(53): CodeIgniter\Database\BaseBuilder->countAllResults()
+#3 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTable.php(173): Hermawan\DataTables\DataTableQuery->countAll()
+#4 C:\Dropbox\Projetos\www\glometal\app\Controllers\Usuarios.php(23): Hermawan\DataTables\DataTable->toJson()
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Usuarios->listar()
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-24 11:33:27 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Malformed UTF-8 characters, possibly incorrectly encoded". in C:\Dropbox\Projetos\www\glometal\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\Dropbox\Projetos\www\glometal\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\Dropbox\Projetos\www\glometal\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\Dropbox\Projetos\www\glometal\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\Dropbox\Projetos\www\glometal\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2021-12-24 11:36:22 --> Error connecting to the database: php_network_getaddresses: getaddrinfo failed: Este geralmente é um erro temporário durante a resolução do nome do host e significa que o servidor local não recebeu uma resposta de um servidor autorizado. 
+CRITICAL - 2021-12-24 11:36:22 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: Este geralmente é um erro temporário durante a resolução do nome do host e significa que o servidor local não recebeu uma resposta de um servidor autorizado. 
+#0 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Dropbox\Projetos\www\glometal\system\Database\BaseBuilder.php(1527): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#2 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(53): CodeIgniter\Database\BaseBuilder->countAllResults()
+#3 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTable.php(173): Hermawan\DataTables\DataTableQuery->countAll()
+#4 C:\Dropbox\Projetos\www\glometal\app\Controllers\Usuarios.php(23): Hermawan\DataTables\DataTable->toJson()
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Usuarios->listar()
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-24 11:36:22 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Malformed UTF-8 characters, possibly incorrectly encoded". in C:\Dropbox\Projetos\www\glometal\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\Dropbox\Projetos\www\glometal\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\Dropbox\Projetos\www\glometal\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\Dropbox\Projetos\www\glometal\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\Dropbox\Projetos\www\glometal\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-12-24 11:36:25 --> Call to undefined method App\Controllers\Usuarios::validator()
+#0 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Usuarios->salvar()
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2021-12-24 11:36:51 --> Error connecting to the database: php_network_getaddresses: getaddrinfo failed: Este geralmente é um erro temporário durante a resolução do nome do host e significa que o servidor local não recebeu uma resposta de um servidor autorizado. 
+CRITICAL - 2021-12-24 11:36:51 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: Este geralmente é um erro temporário durante a resolução do nome do host e significa que o servidor local não recebeu uma resposta de um servidor autorizado. 
+#0 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Dropbox\Projetos\www\glometal\system\Database\BaseBuilder.php(1527): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#2 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(53): CodeIgniter\Database\BaseBuilder->countAllResults()
+#3 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTable.php(173): Hermawan\DataTables\DataTableQuery->countAll()
+#4 C:\Dropbox\Projetos\www\glometal\app\Controllers\Usuarios.php(23): Hermawan\DataTables\DataTable->toJson()
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Usuarios->listar()
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-24 11:36:51 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Malformed UTF-8 characters, possibly incorrectly encoded". in C:\Dropbox\Projetos\www\glometal\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\Dropbox\Projetos\www\glometal\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\Dropbox\Projetos\www\glometal\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\Dropbox\Projetos\www\glometal\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\Dropbox\Projetos\www\glometal\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-12-24 11:36:51 --> Call to undefined method App\Controllers\Usuarios::validator()
+#0 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Usuarios->salvar()
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2021-12-24 11:36:55 --> Error connecting to the database: php_network_getaddresses: getaddrinfo failed: Este geralmente é um erro temporário durante a resolução do nome do host e significa que o servidor local não recebeu uma resposta de um servidor autorizado. 
+CRITICAL - 2021-12-24 11:36:55 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: Este geralmente é um erro temporário durante a resolução do nome do host e significa que o servidor local não recebeu uma resposta de um servidor autorizado. 
+#0 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Dropbox\Projetos\www\glometal\system\Database\BaseBuilder.php(1527): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#2 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(53): CodeIgniter\Database\BaseBuilder->countAllResults()
+#3 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTable.php(173): Hermawan\DataTables\DataTableQuery->countAll()
+#4 C:\Dropbox\Projetos\www\glometal\app\Controllers\Usuarios.php(23): Hermawan\DataTables\DataTable->toJson()
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Usuarios->listar()
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-24 11:36:55 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Malformed UTF-8 characters, possibly incorrectly encoded". in C:\Dropbox\Projetos\www\glometal\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\Dropbox\Projetos\www\glometal\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\Dropbox\Projetos\www\glometal\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\Dropbox\Projetos\www\glometal\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\Dropbox\Projetos\www\glometal\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-12-24 11:36:58 --> Call to undefined method App\Controllers\Usuarios::validator()
+#0 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Usuarios->salvar()
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2021-12-24 11:37:57 --> Error connecting to the database: php_network_getaddresses: getaddrinfo failed: Este geralmente é um erro temporário durante a resolução do nome do host e significa que o servidor local não recebeu uma resposta de um servidor autorizado. 
+CRITICAL - 2021-12-24 11:37:57 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: Este geralmente é um erro temporário durante a resolução do nome do host e significa que o servidor local não recebeu uma resposta de um servidor autorizado. 
+#0 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Dropbox\Projetos\www\glometal\system\Database\BaseBuilder.php(1527): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#2 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(53): CodeIgniter\Database\BaseBuilder->countAllResults()
+#3 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTable.php(173): Hermawan\DataTables\DataTableQuery->countAll()
+#4 C:\Dropbox\Projetos\www\glometal\app\Controllers\Usuarios.php(23): Hermawan\DataTables\DataTable->toJson()
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Usuarios->listar()
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-24 11:37:57 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Malformed UTF-8 characters, possibly incorrectly encoded". in C:\Dropbox\Projetos\www\glometal\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\Dropbox\Projetos\www\glometal\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\Dropbox\Projetos\www\glometal\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\Dropbox\Projetos\www\glometal\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\Dropbox\Projetos\www\glometal\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-12-24 11:37:57 --> Call to undefined method App\Controllers\Usuarios::validator()
+#0 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Usuarios->salvar()
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2021-12-24 11:38:27 --> Error connecting to the database: php_network_getaddresses: getaddrinfo failed: Este geralmente é um erro temporário durante a resolução do nome do host e significa que o servidor local não recebeu uma resposta de um servidor autorizado. 
+CRITICAL - 2021-12-24 11:38:27 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: Este geralmente é um erro temporário durante a resolução do nome do host e significa que o servidor local não recebeu uma resposta de um servidor autorizado. 
+#0 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Dropbox\Projetos\www\glometal\system\Database\BaseBuilder.php(1527): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#2 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(53): CodeIgniter\Database\BaseBuilder->countAllResults()
+#3 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTable.php(173): Hermawan\DataTables\DataTableQuery->countAll()
+#4 C:\Dropbox\Projetos\www\glometal\app\Controllers\Usuarios.php(23): Hermawan\DataTables\DataTable->toJson()
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Usuarios->listar()
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-24 11:38:27 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Malformed UTF-8 characters, possibly incorrectly encoded". in C:\Dropbox\Projetos\www\glometal\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\Dropbox\Projetos\www\glometal\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\Dropbox\Projetos\www\glometal\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\Dropbox\Projetos\www\glometal\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\Dropbox\Projetos\www\glometal\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-12-24 11:38:30 --> Call to undefined method App\Controllers\Usuarios::validator()
+#0 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Usuarios->salvar()
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-24 11:39:14 --> Call to undefined method App\Controllers\Usuarios::validator()
+#0 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Usuarios->salvar()
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-24 11:39:18 --> Call to undefined method App\Controllers\Usuarios::validator()
+#0 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Usuarios->salvar()
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-12-24 11:41:13 --> Undefined property: App\Controllers\Usuarios::$validation
+#0 C:\Dropbox\Projetos\www\glometal\app\Controllers\Usuarios.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\Dropbox\\Proj...', 55, Array)
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Usuarios->salvar()
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-24 11:41:27 --> Undefined property: App\Controllers\Usuarios::$validation
+#0 C:\Dropbox\Projetos\www\glometal\app\Controllers\Usuarios.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\Dropbox\\Proj...', 55, Array)
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Usuarios->salvar()
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-24 11:41:53 --> Undefined property: App\Controllers\Usuarios::$validate
+#0 C:\Dropbox\Projetos\www\glometal\app\Controllers\Usuarios.php(55): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\Dropbox\\Proj...', 55, Array)
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Usuarios->salvar()
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-24 11:44:27 --> Cannot use empty array elements in arrays
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-12-24 11:45:08 --> Undefined property: App\Controllers\Usuarios::$validate
+#0 C:\Dropbox\Projetos\www\glometal\app\Controllers\Usuarios.php(57): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\Dropbox\\Proj...', 57, Array)
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Usuarios->salvar()
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2021-12-24 11:46:58 --> Error connecting to the database: php_network_getaddresses: getaddrinfo failed: Este geralmente é um erro temporário durante a resolução do nome do host e significa que o servidor local não recebeu uma resposta de um servidor autorizado. 
+CRITICAL - 2021-12-24 11:46:58 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: Este geralmente é um erro temporário durante a resolução do nome do host e significa que o servidor local não recebeu uma resposta de um servidor autorizado. 
+#0 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Dropbox\Projetos\www\glometal\system\Database\BaseBuilder.php(1527): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#2 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(53): CodeIgniter\Database\BaseBuilder->countAllResults()
+#3 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTable.php(173): Hermawan\DataTables\DataTableQuery->countAll()
+#4 C:\Dropbox\Projetos\www\glometal\app\Controllers\Usuarios.php(23): Hermawan\DataTables\DataTable->toJson()
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Usuarios->listar()
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-24 11:46:58 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Malformed UTF-8 characters, possibly incorrectly encoded". in C:\Dropbox\Projetos\www\glometal\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\Dropbox\Projetos\www\glometal\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\Dropbox\Projetos\www\glometal\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\Dropbox\Projetos\www\glometal\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\Dropbox\Projetos\www\glometal\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2021-12-24 11:47:00 --> Error connecting to the database: php_network_getaddresses: getaddrinfo failed: Este geralmente é um erro temporário durante a resolução do nome do host e significa que o servidor local não recebeu uma resposta de um servidor autorizado. 
+CRITICAL - 2021-12-24 11:47:00 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: Este geralmente é um erro temporário durante a resolução do nome do host e significa que o servidor local não recebeu uma resposta de um servidor autorizado. 
+#0 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Dropbox\Projetos\www\glometal\system\Database\BaseBuilder.php(1527): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#2 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(53): CodeIgniter\Database\BaseBuilder->countAllResults()
+#3 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTable.php(173): Hermawan\DataTables\DataTableQuery->countAll()
+#4 C:\Dropbox\Projetos\www\glometal\app\Controllers\Usuarios.php(23): Hermawan\DataTables\DataTable->toJson()
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Usuarios->listar()
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-24 11:47:00 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Malformed UTF-8 characters, possibly incorrectly encoded". in C:\Dropbox\Projetos\www\glometal\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\Dropbox\Projetos\www\glometal\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\Dropbox\Projetos\www\glometal\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\Dropbox\Projetos\www\glometal\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\Dropbox\Projetos\www\glometal\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2021-12-24 11:47:00 --> Error connecting to the database: php_network_getaddresses: getaddrinfo failed: Este geralmente é um erro temporário durante a resolução do nome do host e significa que o servidor local não recebeu uma resposta de um servidor autorizado. 
+CRITICAL - 2021-12-24 11:47:00 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: Este geralmente é um erro temporário durante a resolução do nome do host e significa que o servidor local não recebeu uma resposta de um servidor autorizado. 
+#0 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Dropbox\Projetos\www\glometal\system\Database\BaseBuilder.php(1527): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#2 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(53): CodeIgniter\Database\BaseBuilder->countAllResults()
+#3 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTable.php(173): Hermawan\DataTables\DataTableQuery->countAll()
+#4 C:\Dropbox\Projetos\www\glometal\app\Controllers\Usuarios.php(23): Hermawan\DataTables\DataTable->toJson()
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Usuarios->listar()
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-24 11:47:00 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Malformed UTF-8 characters, possibly incorrectly encoded". in C:\Dropbox\Projetos\www\glometal\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\Dropbox\Projetos\www\glometal\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\Dropbox\Projetos\www\glometal\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\Dropbox\Projetos\www\glometal\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\Dropbox\Projetos\www\glometal\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2021-12-24 11:48:29 --> Error connecting to the database: php_network_getaddresses: getaddrinfo failed: Este geralmente é um erro temporário durante a resolução do nome do host e significa que o servidor local não recebeu uma resposta de um servidor autorizado. 
+CRITICAL - 2021-12-24 11:48:29 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: Este geralmente é um erro temporário durante a resolução do nome do host e significa que o servidor local não recebeu uma resposta de um servidor autorizado. 
+#0 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Dropbox\Projetos\www\glometal\system\Database\BaseBuilder.php(1527): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#2 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(53): CodeIgniter\Database\BaseBuilder->countAllResults()
+#3 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTable.php(173): Hermawan\DataTables\DataTableQuery->countAll()
+#4 C:\Dropbox\Projetos\www\glometal\app\Controllers\Usuarios.php(23): Hermawan\DataTables\DataTable->toJson()
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Usuarios->listar()
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-24 11:48:29 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Malformed UTF-8 characters, possibly incorrectly encoded". in C:\Dropbox\Projetos\www\glometal\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\Dropbox\Projetos\www\glometal\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\Dropbox\Projetos\www\glometal\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\Dropbox\Projetos\www\glometal\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\Dropbox\Projetos\www\glometal\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2021-12-24 11:48:48 --> Error connecting to the database: php_network_getaddresses: getaddrinfo failed: Este geralmente é um erro temporário durante a resolução do nome do host e significa que o servidor local não recebeu uma resposta de um servidor autorizado. 
+CRITICAL - 2021-12-24 11:48:48 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: Este geralmente é um erro temporário durante a resolução do nome do host e significa que o servidor local não recebeu uma resposta de um servidor autorizado. 
+#0 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Dropbox\Projetos\www\glometal\system\Database\BaseBuilder.php(1527): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#2 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(53): CodeIgniter\Database\BaseBuilder->countAllResults()
+#3 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTable.php(173): Hermawan\DataTables\DataTableQuery->countAll()
+#4 C:\Dropbox\Projetos\www\glometal\app\Controllers\Usuarios.php(23): Hermawan\DataTables\DataTable->toJson()
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Usuarios->listar()
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-24 11:48:48 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Malformed UTF-8 characters, possibly incorrectly encoded". in C:\Dropbox\Projetos\www\glometal\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\Dropbox\Projetos\www\glometal\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\Dropbox\Projetos\www\glometal\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\Dropbox\Projetos\www\glometal\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\Dropbox\Projetos\www\glometal\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2021-12-24 11:49:32 --> Error connecting to the database: php_network_getaddresses: getaddrinfo failed: Este geralmente é um erro temporário durante a resolução do nome do host e significa que o servidor local não recebeu uma resposta de um servidor autorizado. 
+CRITICAL - 2021-12-24 11:49:32 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: Este geralmente é um erro temporário durante a resolução do nome do host e significa que o servidor local não recebeu uma resposta de um servidor autorizado. 
+#0 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Dropbox\Projetos\www\glometal\system\Database\BaseBuilder.php(1527): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#2 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(53): CodeIgniter\Database\BaseBuilder->countAllResults()
+#3 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTable.php(173): Hermawan\DataTables\DataTableQuery->countAll()
+#4 C:\Dropbox\Projetos\www\glometal\app\Controllers\Usuarios.php(23): Hermawan\DataTables\DataTable->toJson()
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Usuarios->listar()
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-24 11:49:32 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Malformed UTF-8 characters, possibly incorrectly encoded". in C:\Dropbox\Projetos\www\glometal\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\Dropbox\Projetos\www\glometal\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\Dropbox\Projetos\www\glometal\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\Dropbox\Projetos\www\glometal\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\Dropbox\Projetos\www\glometal\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2021-12-24 11:49:49 --> Error connecting to the database: php_network_getaddresses: getaddrinfo failed: Este geralmente é um erro temporário durante a resolução do nome do host e significa que o servidor local não recebeu uma resposta de um servidor autorizado. 
+CRITICAL - 2021-12-24 11:49:49 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: Este geralmente é um erro temporário durante a resolução do nome do host e significa que o servidor local não recebeu uma resposta de um servidor autorizado. 
+#0 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Dropbox\Projetos\www\glometal\system\Database\BaseBuilder.php(1527): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#2 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(53): CodeIgniter\Database\BaseBuilder->countAllResults()
+#3 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTable.php(173): Hermawan\DataTables\DataTableQuery->countAll()
+#4 C:\Dropbox\Projetos\www\glometal\app\Controllers\Usuarios.php(23): Hermawan\DataTables\DataTable->toJson()
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Usuarios->listar()
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-24 11:49:49 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Malformed UTF-8 characters, possibly incorrectly encoded". in C:\Dropbox\Projetos\www\glometal\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\Dropbox\Projetos\www\glometal\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\Dropbox\Projetos\www\glometal\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\Dropbox\Projetos\www\glometal\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\Dropbox\Projetos\www\glometal\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2021-12-24 11:50:54 --> Error connecting to the database: php_network_getaddresses: getaddrinfo failed: Este geralmente é um erro temporário durante a resolução do nome do host e significa que o servidor local não recebeu uma resposta de um servidor autorizado. 
+CRITICAL - 2021-12-24 11:50:54 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: Este geralmente é um erro temporário durante a resolução do nome do host e significa que o servidor local não recebeu uma resposta de um servidor autorizado. 
+#0 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Dropbox\Projetos\www\glometal\system\Database\BaseBuilder.php(1527): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#2 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(53): CodeIgniter\Database\BaseBuilder->countAllResults()
+#3 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTable.php(173): Hermawan\DataTables\DataTableQuery->countAll()
+#4 C:\Dropbox\Projetos\www\glometal\app\Controllers\Usuarios.php(23): Hermawan\DataTables\DataTable->toJson()
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Usuarios->listar()
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-24 11:50:54 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Malformed UTF-8 characters, possibly incorrectly encoded". in C:\Dropbox\Projetos\www\glometal\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\Dropbox\Projetos\www\glometal\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\Dropbox\Projetos\www\glometal\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\Dropbox\Projetos\www\glometal\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\Dropbox\Projetos\www\glometal\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2021-12-24 11:57:37 --> Error connecting to the database: php_network_getaddresses: getaddrinfo failed: Este geralmente é um erro temporário durante a resolução do nome do host e significa que o servidor local não recebeu uma resposta de um servidor autorizado. 
+CRITICAL - 2021-12-24 11:57:37 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: Este geralmente é um erro temporário durante a resolução do nome do host e significa que o servidor local não recebeu uma resposta de um servidor autorizado. 
+#0 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Dropbox\Projetos\www\glometal\system\Database\BaseBuilder.php(1527): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#2 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(53): CodeIgniter\Database\BaseBuilder->countAllResults()
+#3 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTable.php(173): Hermawan\DataTables\DataTableQuery->countAll()
+#4 C:\Dropbox\Projetos\www\glometal\app\Controllers\Usuarios.php(23): Hermawan\DataTables\DataTable->toJson()
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Usuarios->listar()
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-24 11:57:37 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Malformed UTF-8 characters, possibly incorrectly encoded". in C:\Dropbox\Projetos\www\glometal\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\Dropbox\Projetos\www\glometal\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\Dropbox\Projetos\www\glometal\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\Dropbox\Projetos\www\glometal\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\Dropbox\Projetos\www\glometal\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2021-12-24 11:58:24 --> Error connecting to the database: php_network_getaddresses: getaddrinfo failed: Este geralmente é um erro temporário durante a resolução do nome do host e significa que o servidor local não recebeu uma resposta de um servidor autorizado. 
+CRITICAL - 2021-12-24 11:58:24 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: Este geralmente é um erro temporário durante a resolução do nome do host e significa que o servidor local não recebeu uma resposta de um servidor autorizado. 
+#0 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Dropbox\Projetos\www\glometal\system\Database\BaseBuilder.php(1527): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#2 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(53): CodeIgniter\Database\BaseBuilder->countAllResults()
+#3 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTable.php(173): Hermawan\DataTables\DataTableQuery->countAll()
+#4 C:\Dropbox\Projetos\www\glometal\app\Controllers\Usuarios.php(23): Hermawan\DataTables\DataTable->toJson()
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Usuarios->listar()
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-24 11:58:24 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Malformed UTF-8 characters, possibly incorrectly encoded". in C:\Dropbox\Projetos\www\glometal\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\Dropbox\Projetos\www\glometal\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\Dropbox\Projetos\www\glometal\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\Dropbox\Projetos\www\glometal\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\Dropbox\Projetos\www\glometal\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2021-12-24 11:59:00 --> Error connecting to the database: php_network_getaddresses: getaddrinfo failed: Este geralmente é um erro temporário durante a resolução do nome do host e significa que o servidor local não recebeu uma resposta de um servidor autorizado. 
+CRITICAL - 2021-12-24 11:59:00 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: Este geralmente é um erro temporário durante a resolução do nome do host e significa que o servidor local não recebeu uma resposta de um servidor autorizado. 
+#0 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Dropbox\Projetos\www\glometal\system\Database\BaseBuilder.php(1527): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#2 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(53): CodeIgniter\Database\BaseBuilder->countAllResults()
+#3 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTable.php(173): Hermawan\DataTables\DataTableQuery->countAll()
+#4 C:\Dropbox\Projetos\www\glometal\app\Controllers\Usuarios.php(23): Hermawan\DataTables\DataTable->toJson()
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Usuarios->listar()
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-24 11:59:00 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Malformed UTF-8 characters, possibly incorrectly encoded". in C:\Dropbox\Projetos\www\glometal\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\Dropbox\Projetos\www\glometal\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\Dropbox\Projetos\www\glometal\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\Dropbox\Projetos\www\glometal\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\Dropbox\Projetos\www\glometal\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-12-24 13:23:56 --> syntax error, unexpected '\' (T_NS_SEPARATOR), expecting ';'
+#0 C:\Dropbox\Projetos\www\glometal\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('/usuarios')
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('/usuarios')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-24 13:24:15 --> syntax error, unexpected '\' (T_NS_SEPARATOR), expecting ';'
+#0 C:\Dropbox\Projetos\www\glometal\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('/usuarios')
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('/usuarios')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-24 13:25:05 --> syntax error, unexpected '\' (T_NS_SEPARATOR), expecting ';'
+#0 C:\Dropbox\Projetos\www\glometal\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('/usuarios')
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('/usuarios')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-24 13:25:06 --> syntax error, unexpected '\' (T_NS_SEPARATOR), expecting ';'
+#0 C:\Dropbox\Projetos\www\glometal\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('/usuarios')
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('/usuarios')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-24 13:25:07 --> syntax error, unexpected '\' (T_NS_SEPARATOR), expecting ';'
+#0 C:\Dropbox\Projetos\www\glometal\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('/usuarios')
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('/usuarios')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-24 13:25:07 --> syntax error, unexpected '\' (T_NS_SEPARATOR), expecting ';'
+#0 C:\Dropbox\Projetos\www\glometal\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('/usuarios')
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('/usuarios')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-24 13:25:07 --> syntax error, unexpected '\' (T_NS_SEPARATOR), expecting ';'
+#0 C:\Dropbox\Projetos\www\glometal\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('/usuarios')
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('/usuarios')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-24 13:25:07 --> syntax error, unexpected '\' (T_NS_SEPARATOR), expecting ';'
+#0 C:\Dropbox\Projetos\www\glometal\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('/usuarios')
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('/usuarios')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-24 13:25:44 --> syntax error, unexpected '\' (T_NS_SEPARATOR), expecting ';'
+#0 C:\Dropbox\Projetos\www\glometal\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('/usuarios')
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('/usuarios')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-24 13:26:04 --> syntax error, unexpected '"', expecting ';'
+#0 C:\Dropbox\Projetos\www\glometal\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('/usuarios')
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('/usuarios')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-24 13:27:36 --> syntax error, unexpected '''' (T_CONSTANT_ENCAPSED_STRING), expecting identifier (T_STRING)
+#0 C:\Dropbox\Projetos\www\glometal\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('/usuarios')
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('/usuarios')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-24 13:27:39 --> syntax error, unexpected '''' (T_CONSTANT_ENCAPSED_STRING), expecting identifier (T_STRING)
+#0 C:\Dropbox\Projetos\www\glometal\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('/usuarios')
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('/usuarios')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-24 13:27:42 --> syntax error, unexpected '''' (T_CONSTANT_ENCAPSED_STRING), expecting identifier (T_STRING)
+#0 C:\Dropbox\Projetos\www\glometal\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('/usuarios')
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('/usuarios')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

@@ -1,0 +1,420 @@
+ERROR - 2021-12-28 15:15:50 --> Error connecting to the database: php_network_getaddresses: getaddrinfo failed: Este geralmente é um erro temporário durante a resolução do nome do host e significa que o servidor local não recebeu uma resposta de um servidor autorizado. 
+CRITICAL - 2021-12-28 15:15:50 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: Este geralmente é um erro temporário durante a resolução do nome do host e significa que o servidor local não recebeu uma resposta de um servidor autorizado. 
+#0 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Dropbox\Projetos\www\glometal\system\Database\BaseBuilder.php(1527): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#2 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(53): CodeIgniter\Database\BaseBuilder->countAllResults()
+#3 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTable.php(173): Hermawan\DataTables\DataTableQuery->countAll()
+#4 C:\Dropbox\Projetos\www\glometal\app\Controllers\Usuarios.php(23): Hermawan\DataTables\DataTable->toJson()
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Usuarios->listar()
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-28 15:15:50 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Malformed UTF-8 characters, possibly incorrectly encoded". in C:\Dropbox\Projetos\www\glometal\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\Dropbox\Projetos\www\glometal\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\Dropbox\Projetos\www\glometal\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\Dropbox\Projetos\www\glometal\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\Dropbox\Projetos\www\glometal\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2021-12-28 15:16:18 --> Error connecting to the database: php_network_getaddresses: getaddrinfo failed: Este geralmente é um erro temporário durante a resolução do nome do host e significa que o servidor local não recebeu uma resposta de um servidor autorizado. 
+CRITICAL - 2021-12-28 15:16:18 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: Este geralmente é um erro temporário durante a resolução do nome do host e significa que o servidor local não recebeu uma resposta de um servidor autorizado. 
+#0 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Dropbox\Projetos\www\glometal\system\Database\BaseBuilder.php(1527): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#2 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(53): CodeIgniter\Database\BaseBuilder->countAllResults()
+#3 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTable.php(173): Hermawan\DataTables\DataTableQuery->countAll()
+#4 C:\Dropbox\Projetos\www\glometal\app\Controllers\Usuarios.php(23): Hermawan\DataTables\DataTable->toJson()
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Usuarios->listar()
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-28 15:16:18 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Malformed UTF-8 characters, possibly incorrectly encoded". in C:\Dropbox\Projetos\www\glometal\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\Dropbox\Projetos\www\glometal\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\Dropbox\Projetos\www\glometal\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\Dropbox\Projetos\www\glometal\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\Dropbox\Projetos\www\glometal\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2021-12-28 15:16:35 --> Error connecting to the database: php_network_getaddresses: getaddrinfo failed: Este geralmente é um erro temporário durante a resolução do nome do host e significa que o servidor local não recebeu uma resposta de um servidor autorizado. 
+CRITICAL - 2021-12-28 15:16:35 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: Este geralmente é um erro temporário durante a resolução do nome do host e significa que o servidor local não recebeu uma resposta de um servidor autorizado. 
+#0 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Dropbox\Projetos\www\glometal\system\Database\BaseBuilder.php(1527): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#2 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(53): CodeIgniter\Database\BaseBuilder->countAllResults()
+#3 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTable.php(173): Hermawan\DataTables\DataTableQuery->countAll()
+#4 C:\Dropbox\Projetos\www\glometal\app\Controllers\Usuarios.php(23): Hermawan\DataTables\DataTable->toJson()
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Usuarios->listar()
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-28 15:16:35 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Malformed UTF-8 characters, possibly incorrectly encoded". in C:\Dropbox\Projetos\www\glometal\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\Dropbox\Projetos\www\glometal\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\Dropbox\Projetos\www\glometal\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\Dropbox\Projetos\www\glometal\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\Dropbox\Projetos\www\glometal\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2021-12-28 15:16:45 --> Error connecting to the database: php_network_getaddresses: getaddrinfo failed: Este geralmente é um erro temporário durante a resolução do nome do host e significa que o servidor local não recebeu uma resposta de um servidor autorizado. 
+CRITICAL - 2021-12-28 15:16:45 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: Este geralmente é um erro temporário durante a resolução do nome do host e significa que o servidor local não recebeu uma resposta de um servidor autorizado. 
+#0 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Dropbox\Projetos\www\glometal\system\Database\BaseBuilder.php(1527): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#2 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(53): CodeIgniter\Database\BaseBuilder->countAllResults()
+#3 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTable.php(173): Hermawan\DataTables\DataTableQuery->countAll()
+#4 C:\Dropbox\Projetos\www\glometal\app\Controllers\Usuarios.php(23): Hermawan\DataTables\DataTable->toJson()
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Usuarios->listar()
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-28 15:16:45 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Malformed UTF-8 characters, possibly incorrectly encoded". in C:\Dropbox\Projetos\www\glometal\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\Dropbox\Projetos\www\glometal\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\Dropbox\Projetos\www\glometal\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\Dropbox\Projetos\www\glometal\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\Dropbox\Projetos\www\glometal\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2021-12-28 15:16:53 --> Error connecting to the database: php_network_getaddresses: getaddrinfo failed: Este geralmente é um erro temporário durante a resolução do nome do host e significa que o servidor local não recebeu uma resposta de um servidor autorizado. 
+CRITICAL - 2021-12-28 15:16:53 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: Este geralmente é um erro temporário durante a resolução do nome do host e significa que o servidor local não recebeu uma resposta de um servidor autorizado. 
+#0 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Dropbox\Projetos\www\glometal\system\Database\BaseBuilder.php(1527): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#2 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(53): CodeIgniter\Database\BaseBuilder->countAllResults()
+#3 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTable.php(173): Hermawan\DataTables\DataTableQuery->countAll()
+#4 C:\Dropbox\Projetos\www\glometal\app\Controllers\Usuarios.php(23): Hermawan\DataTables\DataTable->toJson()
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Usuarios->listar()
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-28 15:16:53 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Malformed UTF-8 characters, possibly incorrectly encoded". in C:\Dropbox\Projetos\www\glometal\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\Dropbox\Projetos\www\glometal\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\Dropbox\Projetos\www\glometal\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\Dropbox\Projetos\www\glometal\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\Dropbox\Projetos\www\glometal\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2021-12-28 15:17:10 --> Error connecting to the database: php_network_getaddresses: getaddrinfo failed: Este geralmente é um erro temporário durante a resolução do nome do host e significa que o servidor local não recebeu uma resposta de um servidor autorizado. 
+CRITICAL - 2021-12-28 15:17:10 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: Este geralmente é um erro temporário durante a resolução do nome do host e significa que o servidor local não recebeu uma resposta de um servidor autorizado. 
+#0 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Dropbox\Projetos\www\glometal\system\Database\BaseBuilder.php(1527): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#2 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(53): CodeIgniter\Database\BaseBuilder->countAllResults()
+#3 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTable.php(173): Hermawan\DataTables\DataTableQuery->countAll()
+#4 C:\Dropbox\Projetos\www\glometal\app\Controllers\Usuarios.php(23): Hermawan\DataTables\DataTable->toJson()
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Usuarios->listar()
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-28 15:17:10 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Malformed UTF-8 characters, possibly incorrectly encoded". in C:\Dropbox\Projetos\www\glometal\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\Dropbox\Projetos\www\glometal\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\Dropbox\Projetos\www\glometal\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\Dropbox\Projetos\www\glometal\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\Dropbox\Projetos\www\glometal\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2021-12-28 15:17:48 --> Error connecting to the database: php_network_getaddresses: getaddrinfo failed: Este geralmente é um erro temporário durante a resolução do nome do host e significa que o servidor local não recebeu uma resposta de um servidor autorizado. 
+CRITICAL - 2021-12-28 15:17:48 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: Este geralmente é um erro temporário durante a resolução do nome do host e significa que o servidor local não recebeu uma resposta de um servidor autorizado. 
+#0 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Dropbox\Projetos\www\glometal\system\Database\BaseBuilder.php(1527): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#2 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(53): CodeIgniter\Database\BaseBuilder->countAllResults()
+#3 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTable.php(173): Hermawan\DataTables\DataTableQuery->countAll()
+#4 C:\Dropbox\Projetos\www\glometal\app\Controllers\Usuarios.php(23): Hermawan\DataTables\DataTable->toJson()
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Usuarios->listar()
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-28 15:17:48 --> Uncaught CodeIgniter\Format\Exceptions\FormatException: Failed to parse json string, error: "Malformed UTF-8 characters, possibly incorrectly encoded". in C:\Dropbox\Projetos\www\glometal\system\Format\JSONFormatter.php:41
+Stack trace:
+#0 C:\Dropbox\Projetos\www\glometal\system\Format\JSONFormatter.php(41): CodeIgniter\Format\Exceptions\FormatException::forInvalidJSON('Malformed UTF-8...')
+#1 C:\Dropbox\Projetos\www\glometal\system\API\ResponseTrait.php(341): CodeIgniter\Format\JSONFormatter->format(Array)
+#2 C:\Dropbox\Projetos\www\glometal\system\API\ResponseTrait.php(99): CodeIgniter\Debug\Exceptions->format(Array)
+#3 C:\Dropbox\Projetos\www\glometal\system\Debug\Exceptions.php(110): CodeIgniter\Debug\Exceptions->respond(Array, 500)
+#4 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Database\Exceptions\DatabaseException))
+#5 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+ERROR - 2021-12-28 15:33:02 --> Duplicate entry 'danilo' for key 'usuario'
+CRITICAL - 2021-12-28 15:33:02 --> Duplicate entry 'danilo' for key 'usuario'
+#0 C:\Dropbox\Projetos\www\glometal\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\Dropbox\Projetos\www\glometal\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\Dropbox\Projetos\www\glometal\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Dropbox\Projetos\www\glometal\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\Dropbox\Projetos\www\glometal\system\Model.php(620): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Dropbox\Projetos\www\glometal\app\Controllers\Usuarios.php(65): CodeIgniter\Model->insert(Array)
+#8 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Usuarios->salvar()
+#9 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#10 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-12-28 15:33:09 --> Duplicate entry 'danilo' for key 'usuario'
+CRITICAL - 2021-12-28 15:33:09 --> Duplicate entry 'danilo' for key 'usuario'
+#0 C:\Dropbox\Projetos\www\glometal\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\Dropbox\Projetos\www\glometal\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\Dropbox\Projetos\www\glometal\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Dropbox\Projetos\www\glometal\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\Dropbox\Projetos\www\glometal\system\Model.php(620): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Dropbox\Projetos\www\glometal\app\Controllers\Usuarios.php(65): CodeIgniter\Model->insert(Array)
+#8 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Usuarios->salvar()
+#9 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#10 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2021-12-28 15:33:14 --> Duplicate entry 'danilo' for key 'usuario'
+CRITICAL - 2021-12-28 15:33:14 --> Duplicate entry 'danilo' for key 'usuario'
+#0 C:\Dropbox\Projetos\www\glometal\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\Dropbox\Projetos\www\glometal\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\Dropbox\Projetos\www\glometal\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Dropbox\Projetos\www\glometal\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\Dropbox\Projetos\www\glometal\system\Model.php(620): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Dropbox\Projetos\www\glometal\app\Controllers\Usuarios.php(65): CodeIgniter\Model->insert(Array)
+#8 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Usuarios->salvar()
+#9 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#10 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2021-12-28 15:49:15 --> syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST)
+#0 C:\Dropbox\Projetos\www\glometal\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('/fornecedores')
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('/fornecedores')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-28 15:50:03 --> syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST)
+#0 C:\Dropbox\Projetos\www\glometal\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('/fornecedores')
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('/fornecedores')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-28 15:51:25 --> syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST)
+#0 C:\Dropbox\Projetos\www\glometal\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('/fornecedores')
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('/fornecedores')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-28 17:15:37 --> Undefined variable: forncedores_model
+#0 C:\Dropbox\Projetos\www\glometal\app\Controllers\Fornecedores.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Dropbox\\Proj...', 70, Array)
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Fornecedores->editar('2')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fornecedores))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-28 17:28:01 --> NÃ£o hÃ¡ dados para update.
+#0 C:\Dropbox\Projetos\www\glometal\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\Dropbox\Projetos\www\glometal\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(NULL, 'update')
+#2 C:\Dropbox\Projetos\www\glometal\system\Model.php(646): CodeIgniter\BaseModel->update(Array, NULL)
+#3 C:\Dropbox\Projetos\www\glometal\app\Controllers\Fornecedores.php(61): CodeIgniter\Model->update(Array)
+#4 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Fornecedores->salvar()
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fornecedores))
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-12-28 17:29:35 --> NÃ£o hÃ¡ dados para update.
+#0 C:\Dropbox\Projetos\www\glometal\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\Dropbox\Projetos\www\glometal\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(NULL, 'update')
+#2 C:\Dropbox\Projetos\www\glometal\system\Model.php(646): CodeIgniter\BaseModel->update(Array, NULL)
+#3 C:\Dropbox\Projetos\www\glometal\app\Controllers\Fornecedores.php(60): CodeIgniter\Model->update(Array)
+#4 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Fornecedores->salvar()
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fornecedores))
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-12-28 17:29:42 --> NÃ£o hÃ¡ dados para update.
+#0 C:\Dropbox\Projetos\www\glometal\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\Dropbox\Projetos\www\glometal\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(NULL, 'update')
+#2 C:\Dropbox\Projetos\www\glometal\system\Model.php(646): CodeIgniter\BaseModel->update(Array, NULL)
+#3 C:\Dropbox\Projetos\www\glometal\app\Controllers\Fornecedores.php(60): CodeIgniter\Model->update(Array)
+#4 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Fornecedores->salvar()
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fornecedores))
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-12-28 17:30:44 --> NÃ£o hÃ¡ dados para update.
+#0 C:\Dropbox\Projetos\www\glometal\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\Dropbox\Projetos\www\glometal\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(NULL, 'update')
+#2 C:\Dropbox\Projetos\www\glometal\system\Model.php(646): CodeIgniter\BaseModel->update(Array, NULL)
+#3 C:\Dropbox\Projetos\www\glometal\app\Controllers\Fornecedores.php(62): CodeIgniter\Model->update(Array)
+#4 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Fornecedores->salvar()
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fornecedores))
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-12-28 17:30:47 --> NÃ£o hÃ¡ dados para update.
+#0 C:\Dropbox\Projetos\www\glometal\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\Dropbox\Projetos\www\glometal\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(NULL, 'update')
+#2 C:\Dropbox\Projetos\www\glometal\system\Model.php(646): CodeIgniter\BaseModel->update(Array, NULL)
+#3 C:\Dropbox\Projetos\www\glometal\app\Controllers\Fornecedores.php(62): CodeIgniter\Model->update(Array)
+#4 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Fornecedores->salvar()
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fornecedores))
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-12-28 21:59:56 --> Undefined variable: titulo_pagina
+#0 C:\Dropbox\Projetos\www\glometal\app\Views\base\header.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Dropbox\\Proj...', 6, Array)
+#1 C:\Dropbox\Projetos\www\glometal\system\View\View.php(214): include('C:\\Dropbox\\Proj...')
+#2 C:\Dropbox\Projetos\www\glometal\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Dropbox\Projetos\www\glometal\system\Common.php(1097): CodeIgniter\View\View->render('base/header.php', Array, true)
+#4 C:\Dropbox\Projetos\www\glometal\app\Controllers\Home.php(9): view('base/header.php')
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Home->index()
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-12-28 22:25:34 --> Error connecting to the database: Nenhuma conexÃ£o pÃ´de ser feita porque a mÃ¡quina de destino as recusou ativamente.
+
+CRITICAL - 2021-12-28 22:25:34 --> Unable to connect to the database.
+Main connection [MySQLi]: Nenhuma conexÃ£o pÃ´de ser feita porque a mÃ¡quina de destino as recusou ativamente.
+
+#0 C:\Dropbox\Projetos\www\glometal\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Dropbox\Projetos\www\glometal\system\Database\BaseBuilder.php(1527): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#2 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTableQuery.php(53): CodeIgniter\Database\BaseBuilder->countAllResults()
+#3 C:\Dropbox\Projetos\www\glometal\app\ThirdParty\codeIgniter4-datatables\src\DataTable.php(173): Hermawan\DataTables\DataTableQuery->countAll()
+#4 C:\Dropbox\Projetos\www\glometal\app\Controllers\Usuarios.php(23): Hermawan\DataTables\DataTable->toJson()
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Usuarios->listar()
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-28 22:44:02 --> syntax error, unexpected 'else' (T_ELSE)
+#0 C:\Dropbox\Projetos\www\glometal\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('/usuarios')
+#1 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('/usuarios')
+#2 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-12-28 22:44:35 --> Undefined variable: totalTime
+#0 C:\Dropbox\Projetos\www\glometal\system\Debug\Toolbar\Views\toolbar.tpl.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Dropbox\\Proj...', 40, Array)
+#1 C:\Dropbox\Projetos\www\glometal\system\Debug\Toolbar.php(497): include('C:\\Dropbox\\Proj...')
+#2 C:\Dropbox\Projetos\www\glometal\system\Debug\Toolbar.php(460): CodeIgniter\Debug\Toolbar->format(Array, 'html')
+#3 C:\Dropbox\Projetos\www\glometal\app\Config\Events.php(48): CodeIgniter\Debug\Toolbar->respond()
+#4 C:\Dropbox\Projetos\www\glometal\system\Events\Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(300): CodeIgniter\Events\Events::trigger('pre_system')
+#6 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-12-28 22:49:42 --> syntax error, unexpected ')', expecting ';' or ','
+#0 C:\Dropbox\Projetos\www\glometal\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\Dropbox\Projetos\www\glometal\system\Common.php(1097): CodeIgniter\View\View->render('base/header.php', Array, true)
+#2 C:\Dropbox\Projetos\www\glometal\app\Views\fornecedores_view.php(3): view('base/header.php', Array)
+#3 C:\Dropbox\Projetos\www\glometal\system\View\View.php(214): include('C:\\Dropbox\\Proj...')
+#4 C:\Dropbox\Projetos\www\glometal\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\Dropbox\Projetos\www\glometal\system\Common.php(1097): CodeIgniter\View\View->render('fornecedores_vi...', Array, true)
+#6 C:\Dropbox\Projetos\www\glometal\app\Controllers\Fornecedores.php(10): view('fornecedores_vi...')
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Fornecedores->index()
+#8 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fornecedores))
+#9 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2021-12-28 22:50:00 --> syntax error, unexpected ':', expecting ';' or ','
+#0 C:\Dropbox\Projetos\www\glometal\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\Dropbox\Projetos\www\glometal\system\Common.php(1097): CodeIgniter\View\View->render('base/header.php', Array, true)
+#2 C:\Dropbox\Projetos\www\glometal\app\Views\fornecedores_view.php(3): view('base/header.php', Array)
+#3 C:\Dropbox\Projetos\www\glometal\system\View\View.php(214): include('C:\\Dropbox\\Proj...')
+#4 C:\Dropbox\Projetos\www\glometal\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\Dropbox\Projetos\www\glometal\system\Common.php(1097): CodeIgniter\View\View->render('fornecedores_vi...', Array, true)
+#6 C:\Dropbox\Projetos\www\glometal\app\Controllers\Fornecedores.php(10): view('fornecedores_vi...')
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Fornecedores->index()
+#8 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fornecedores))
+#9 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2021-12-28 22:51:01 --> syntax error, unexpected ')'
+#0 C:\Dropbox\Projetos\www\glometal\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\Dropbox\Projetos\www\glometal\system\Common.php(1097): CodeIgniter\View\View->render('base/header.php', Array, true)
+#2 C:\Dropbox\Projetos\www\glometal\app\Views\fornecedores_view.php(3): view('base/header.php', Array)
+#3 C:\Dropbox\Projetos\www\glometal\system\View\View.php(214): include('C:\\Dropbox\\Proj...')
+#4 C:\Dropbox\Projetos\www\glometal\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\Dropbox\Projetos\www\glometal\system\Common.php(1097): CodeIgniter\View\View->render('fornecedores_vi...', Array, true)
+#6 C:\Dropbox\Projetos\www\glometal\app\Controllers\Fornecedores.php(10): view('fornecedores_vi...')
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Fornecedores->index()
+#8 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fornecedores))
+#9 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2021-12-28 22:51:01 --> syntax error, unexpected ')'
+#0 C:\Dropbox\Projetos\www\glometal\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\Dropbox\Projetos\www\glometal\system\Common.php(1097): CodeIgniter\View\View->render('base/header.php', Array, true)
+#2 C:\Dropbox\Projetos\www\glometal\app\Views\fornecedores_view.php(3): view('base/header.php', Array)
+#3 C:\Dropbox\Projetos\www\glometal\system\View\View.php(214): include('C:\\Dropbox\\Proj...')
+#4 C:\Dropbox\Projetos\www\glometal\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\Dropbox\Projetos\www\glometal\system\Common.php(1097): CodeIgniter\View\View->render('fornecedores_vi...', Array, true)
+#6 C:\Dropbox\Projetos\www\glometal\app\Controllers\Fornecedores.php(10): view('fornecedores_vi...')
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Fornecedores->index()
+#8 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fornecedores))
+#9 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2021-12-28 22:51:02 --> syntax error, unexpected ')'
+#0 C:\Dropbox\Projetos\www\glometal\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\Dropbox\Projetos\www\glometal\system\Common.php(1097): CodeIgniter\View\View->render('base/header.php', Array, true)
+#2 C:\Dropbox\Projetos\www\glometal\app\Views\fornecedores_view.php(3): view('base/header.php', Array)
+#3 C:\Dropbox\Projetos\www\glometal\system\View\View.php(214): include('C:\\Dropbox\\Proj...')
+#4 C:\Dropbox\Projetos\www\glometal\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\Dropbox\Projetos\www\glometal\system\Common.php(1097): CodeIgniter\View\View->render('fornecedores_vi...', Array, true)
+#6 C:\Dropbox\Projetos\www\glometal\app\Controllers\Fornecedores.php(10): view('fornecedores_vi...')
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Fornecedores->index()
+#8 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fornecedores))
+#9 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2021-12-28 23:04:46 --> Undefined variable: titulo_pagina
+#0 C:\Dropbox\Projetos\www\glometal\app\Views\base\header.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Dropbox\\Proj...', 6, Array)
+#1 C:\Dropbox\Projetos\www\glometal\system\View\View.php(214): include('C:\\Dropbox\\Proj...')
+#2 C:\Dropbox\Projetos\www\glometal\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Dropbox\Projetos\www\glometal\system\Common.php(1097): CodeIgniter\View\View->render('base/header.php', Array, true)
+#4 C:\Dropbox\Projetos\www\glometal\app\Controllers\Home.php(9): view('base/header.php')
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Home->index()
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-12-28 23:05:16 --> Undefined variable: titulo_pagina
+#0 C:\Dropbox\Projetos\www\glometal\app\Views\base\header.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\Dropbox\\Proj...', 6, Array)
+#1 C:\Dropbox\Projetos\www\glometal\system\View\View.php(214): include('C:\\Dropbox\\Proj...')
+#2 C:\Dropbox\Projetos\www\glometal\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Dropbox\Projetos\www\glometal\system\Common.php(1097): CodeIgniter\View\View->render('base/header.php', Array, true)
+#4 C:\Dropbox\Projetos\www\glometal\app\Controllers\Home.php(9): view('base/header.php')
+#5 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(824): App\Controllers\Home->index()
+#6 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Dropbox\Projetos\www\glometal\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Dropbox\Projetos\www\glometal\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
